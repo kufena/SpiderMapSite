@@ -1,0 +1,656 @@
+ATYPIDAE,Atypus,affinis,Eichwald, 1830 E S W RI NS 
+SCYTODIDAE,Scytodes,thoracica,(Latreille, 1802) 
+PHOLCIDAE,Pholcus,phalangioides,(Fuesslin, 1775) E S W NI RI Ah 
+PHOLCIDAE,Psilochorus,simoni,(Berland, 1911) E S W NI RI Ah 
+SEGESTRIIDAE,Segestria,senoculata,(Linnaeus, 1758) E S W NI RI 
+SEGESTRIIDAE,Segestria,bavarica,C. L. Koch, 1843 E W NR 
+SEGESTRIIDAE,Segestria,florentina,(Rossi, 1790) E S W 
+DYSDERIDAE,Dysdera,erythrina,(Walckenaer, 1802) E S W NI RI 
+DYSDERIDAE,Dysdera,crocata,C. L. Koch, 1838 E S W NI RI 
+DYSDERIDAE,Harpactea,hombergi,(Scopoli, 1763) E S W NI RI 
+DYSDERIDAE,Harpactea,rubicunda,(C. L. Koch, 1838) Appendix 2 E NR V 
+OONOPIDAE,Oonops,pulcher,Templeton, 1835 E S W NI RI 
+OONOPIDAE,Oonops,domesticus,Dalmas, 1916 E S W NI RI Ah 
+MIMETIDAE,Ero,cambridgei,Kulczyñski, 1911 E S W NI RI 
+MIMETIDAE,Ero,furcata,(Villers, 1789) E S W NI RI 
+MIMETIDAE,Ero,aphana,(Walckenaer, 1802) E S NS 
+MIMETIDAE,Ero,tuberculata,(De Geer, 1778) E S NS 
+ERESIDAE,Eresus,sandaliatus,(Martini & Goeze, 1778) Eresus niger E NR V 
+ULOBORIDAE,Uloborus,walckenaerius,Latreille, 1806 E NR NT 
+ULOBORIDAE,Uloborus,plumipes,Lucas, 1846 Not present E S W RI Ag 
+ULOBORIDAE,Hyptiotes,paradoxus,(C. L. Koch, 1834) E W RI NS 
+NESTICIDAE,Nesticus,cellulanus,(Clerck, 1757) E S W NI RI 
+NESTICIDAE,Kryptonesticus,eremita,(Simon, 1880) Not present Not present W 
+THERIDIIDAE,Episinus,angulatus,(Blackwall, 1836) E S W NI RI 
+THERIDIIDAE,Episinus,truncatus,Latreille, 1809 E W RI NS 
+THERIDIIDAE,Episinus,maculipes,Cavanna, 1876 E NI RI NS 
+THERIDIIDAE,Euryopis,flavomaculata,(C. L. Koch, 1836) E S W NI RI NS 
+THERIDIIDAE,Lasaeola,prona,(Menge, 1868) Dipoena prona Dipoena prona E W NR E 
+THERIDIIDAE,Lasaeola,tristis,(Hahn, 1833) Dipoena tristis Dipoena tristis E RI NS 
+THERIDIIDAE,Phycosoma,inornatum,(O. P.-Cambridge, 1861) Dipoena inornata Dipoena inornata E S W RI NS 
+THERIDIIDAE,Dipoena,erythropus,(Simon, 1881) E W NR V 
+THERIDIIDAE,Dipoena,melanogaster,(C. L. Koch, 1837) E RI NR E 
+THERIDIIDAE,Dipoena,torva,(Thorell, 1875) S NR NT 
+THERIDIIDAE,Crustulina,guttata,(Wider, 1834) E S W RI 
+THERIDIIDAE,Crustulina,sticta,(O. P.-Cambridge, 1861) E RI NS 
+THERIDIIDAE,Asagena,phalerata,(Panzer, 1801) Steatoda phalerata Steatoda phalerata E S W NI RI 
+THERIDIIDAE,Steatoda,albomaculata,(De Geer, 1778) E W NR 
+THERIDIIDAE,Steadota,bipunctata,(Linnaeus, 1758) E S W NI RI 
+THERIDIIDAE,Steatoda,grossa,(C. L. Koch, 1838) E S W NI RI Ab 
+THERIDIIDAE,Steatoda,nobilis,(Thorell, 1875) Appendix 2 E S W NI RI Ab 
+THERIDIIDAE,Steatoda,triangulosa,(Walckenaer, 1802) Not present E W 
+THERIDIIDAE,Anelosimus,vittatus,(C. L. Koch, 1836) E S W NI RI 
+THERIDIIDAE,Kochiura,aulica,(C. L. Koch, 1838) Anelosimus aulicus E NS 
+THERIDIIDAE,Cryptachaea,riparia,(Blackwall, 1834) Achaearanea riparia Achaearanea riparia E S W RI NS 
+THERIDIIDAE,Cryptachaea,blattea,(Urquhart, 1886) Not present Not present E W 
+THERIDIIDAE,Cryptachaea,veruculata,(Urquhart, 1885) Achaearanea veruculata E 
+THERIDIIDAE,Parasteatoda,lunata,(Clerck, 1757) Achaearanea lunata Achaearanea lunata E W RI 
+THERIDIIDAE,Parasteatoda,tepidariorum,(C. L. Koch, 1841) Achaearanea tepidariorum Achaearanea tepidariorum E S W NI RI Ag 
+THERIDIIDAE,Parasteatoda,simulans,(Thorell, 1875) Achaearanea simulans Achaearanea simulans E W 
+THERIDIIDAE,Phylloneta,sisyphia,(Clerck, 1757) Theridion sisyphium E S W NI RI 
+THERIDIIDAE,Phylloneta,impressa,(L. Koch, 1881) Theridion impressum E S W NI RI 
+THERIDIIDAE,Theridion,pictum,(Walckenaer, 1802) E S W 
+THERIDIIDAE,Theridion,hemerobium,Simon, 1914 E W RI NS 
+THERIDIIDAE,Theridion,hannoniae,Denis, 1944 Not present W 
+THERIDIIDAE,Theridion,varians,Hahn, 1833 E S W NI RI 
+THERIDIIDAE,Theridion,pinastri,L. Koch, 1872 E NS 
+THERIDIIDAE,Theridion,familiare,O. P.-Cambridge, 1871 E S NS 
+THERIDIIDAE,Theridion,melanurum,Hahn, 1831 E S W NI RI 
+THERIDIIDAE,Theridion,mystaceum,L. Koch, 1870 E S W NI RI 
+THERIDIIDAE,Sardinidion,blackwalli,(O. P.-Cambridge, 1871) Theridion blackwalli Theridion blackwalli E S W RI NS 
+THERIDIIDAE,Platnickina,tincta,(Walckenaer, 1802) Theridion tinctum E S W NI RI 
+THERIDIIDAE,Simitidion,simile,(C. L. Koch, 1836) Theridion simile E S W NI RI 
+THERIDIIDAE,Neottiura,bimaculata,(Linnaeus, 1767) Theridion bimaculatum E S W NI RI 
+THERIDIIDAE,Paidiscura,pallens,(Blackwall, 1834) Theridion pallens E S W NI RI 
+THERIDIIDAE,Rugathodes,instabilis,(O. P.-Cambridge, 1871) Theridion instabile E W NI RI NS 
+THERIDIIDAE,Rugathodes,bellicosus,(Simon, 1873) Theridion bellicosum E S W RI NR 
+THERIDIIDAE,Rugathodes,sexpunctatus,(Emerton, 1882) Not present S 
+THERIDIIDAE,Coleosoma,floridanum,(Banks, 1900) Not present Not present E Ag 
+THERIDIIDAE,Enoplognatha,ovata,(Clerck, 1757) E S W NI RI 
+THERIDIIDAE,Enoplognatha,latimana,Hippa & Oksala, 1982 Appendix 1 E S W RI 
+THERIDIIDAE,Enoplognatha,thoracica,(Hahn, 1833) E S W NI RI 
+THERIDIIDAE,Enoplognatha,mordax,(Thorell, 1875) Enoplognatha crucifera E S W NS 
+THERIDIIDAE,Enoplognatha,caricis,(Fickert, 1876) Enoplognatha tecta Enoplognatha tecta E NR V 
+THERIDIIDAE,Enoplognatha,oelandica,(Thorell, 1875) E NR CE 
+THERIDIIDAE,Robertus,lividus,(Blackwall, 1836) E S W NI RI 
+THERIDIIDAE,Robertus,arundineti,(O. P.-Cambridge, 1871) E S W NI RI 
+THERIDIIDAE,Robertus,neglectus,(O. P.-Cambridge, 1871) E S W NI RI NS 
+THERIDIIDAE,Robertus,scoticus,Jackson, 1914 S NR CE 
+THERIDIIDAE,Robertus,insignis,O. P.-Cambridge, 1907 E NR DD 
+THERIDIIDAE,Pholcomma,gibbum,(Westring, 1851) E S W NI RI 
+THERIDIIDAE,Theonoe,minutissima,(O. P.-Cambridge, 1879) E S W NI RI 
+THERIDIOSOMATIDAE,Theridiosoma,gemmosum,(L. Koch, 1877) E W NI RI NS 
+MYSMENIDAE,Trogloneta,granulum,Simon, 1922 Not present Not present W 
+LINYPHIIDAE,Ceratinella,brevipes,(Westring, 1851) E S W NI RI 
+LINYPHIIDAE,Ceratinella,brevis,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Ceratinella,scabrosa,(O. P.-Cambridge, 1871) E S W NI RI 
+LINYPHIIDAE,Walckenaeria,acuminata,Blackwall, 1833 E S W NI RI 
+LINYPHIIDAE,Walckenaeria,mitrata,(Menge, 1868) E NR V 
+LINYPHIIDAE,Walckenaeria,antica,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Walckenaeria,alticeps,(Denis, 1952) E S W NI RI NS 
+LINYPHIIDAE,Walckenaeria,cucullata,(C. L. Koch, 1836) E S W RI 
+LINYPHIIDAE,Walckenaeria,nodosa,O. P.-Cambridge, 1873 E S W NI RI NS 
+LINYPHIIDAE,Walckenaeria,atrotibialis,(O. P.-Cambridge, 1878) E S W NI RI 
+LINYPHIIDAE,Walckenaeria,capito,(Westring, 1861) E S W RI NS 
+LINYPHIIDAE,Walckenaeria,incisa,(O. P.-Cambridge, 1871) E S W NS 
+LINYPHIIDAE,Walckenaeria,dysderoides,(Wider, 1834) E S W NI RI NS 
+LINYPHIIDAE,Walckenaeria,stylifrons,(O. P.-Cambridge, 1875) E NR V 
+LINYPHIIDAE,Walckenaeria,nudipalpis,(Westring, 1851) E S W NI RI 
+LINYPHIIDAE,Walckenaeria,obtusa,Blackwall, 1836 E S W NS 
+LINYPHIIDAE,Walckenaeria,monoceros,(Wider, 1834) E S W RI NS 
+LINYPHIIDAE,Walckenaeria,corniculans,(O. P.-Cambridge, 1875) E RI NR CE 
+LINYPHIIDAE,Walckenaeria,furcillata,(Menge, 1869) E S W NS 
+LINYPHIIDAE,Walckenaeria,unicornis,O. P.-Cambridge, 1861 E S W NI RI 
+LINYPHIIDAE,Walckenaeria,kochi,(O. P.-Cambridge, 1872) E S W NI RI NS 
+LINYPHIIDAE,Walckenaeria,clavicornis,(Emerton, 1882) E S W NI RI NS 
+LINYPHIIDAE,Walckenaeria,cuspidata,Blackwall, 1833 E S W NI RI 
+LINYPHIIDAE,Walckenaeria,vigilax,(Blackwall, 1853) E S W NI RI 
+LINYPHIIDAE,Dicymbium,nigrum,(Blackwall, 1834) E S W NI RI 
+LINYPHIIDAE,Dicymbium,nigrum,brevisetosum Locket, 1962 Dicymbium brevisetosum D. nigrum f. brevisetosum E S W NI RI 
+LINYPHIIDAE,Dicymbium,tibiale,(Blackwall, 1836) E S W NI RI 
+LINYPHIIDAE,Entelecara,acuminata,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Entelecara,congenera,(O. P.-Cambridge, 1879) E W NS 
+LINYPHIIDAE,Entelecara,erythropus,(Westring, 1851) E S W NI RI 
+LINYPHIIDAE,Entelecara,flavipes,(Blackwall, 1834) E S W RI NS 
+LINYPHIIDAE,Entelecara,omissa,O. P.-Cambridge, 1902 E RI NS 
+LINYPHIIDAE,Entelecara,errata,O. P.-Cambridge, 1913 E S W RI NS 
+LINYPHIIDAE,Moebelia,penicillata,(Westring, 1851) E S W NI RI NS 
+LINYPHIIDAE,Hylyphantes,graminicola,(Sundevall, 1830) E S 
+LINYPHIIDAE,Gnathonarium,dentatum,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Trematocephalus,cristatus,(Wider, 1834) E NS 
+LINYPHIIDAE,Tmeticus,affinis,(Blackwall, 1855) E S W RI NS 
+LINYPHIIDAE,Gongylidium,rufipes,(Linnaeus, 1758) E S W NI RI 
+LINYPHIIDAE,Dismodicus,bifrons,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Dismodicus,elevatus,(C. L. Koch, 1838) E S NR V 
+LINYPHIIDAE,Hypomma,bituberculatum,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Hypomma,fulvum,(Bösenberg, 1902) E W NI RI NS 
+LINYPHIIDAE,Hypomma,cornutum,(Blackwall, 1833) E S W NI RI 
+LINYPHIIDAE,Metopobactrus,prominulus,(O. P.-Cambridge, 1872) E S W NI RI 
+LINYPHIIDAE,Hybocoptus,corrugis,(O. P.-Cambridge, 1875) Hybocoptus decollatus Hybocoptus decollatus E W NS 
+LINYPHIIDAE,Baryphyma,pratense,(Blackwall, 1861) E S W 
+LINYPHIIDAE,Baryphyma,gowerense,(Locket, 1965) E W NI RI NR V 
+LINYPHIIDAE,Baryphyma,trifrons,(O. P.-Cambridge, 1863) E S W NI RI 
+LINYPHIIDAE,Baryphyma,maritimum,(Crocker & Parker, 1970) E NR NT 
+LINYPHIIDAE,Praestigia,duffeyi,Millidge, 1954 Baryphyma duffeyi E RI NR E 
+LINYPHIIDAE,Gonatium,rubens,(Blackwall, 1833) E S W NI RI 
+LINYPHIIDAE,Gonatium,rubellum,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Gonatium,paradoxum,(L. Koch, 1869) E NR E 
+LINYPHIIDAE,Maso,sundevalli,(Westring, 1851) E S W NI RI 
+LINYPHIIDAE,Maso,gallicus,Simon, 1894 E W NS 
+LINYPHIIDAE,Minicia,marginella,(Wider, 1834) Appendix 2 E RI NR DD 
+LINYPHIIDAE,Peponocranium,ludicrum,(O. P.-Cambridge, 1861) E S W NI RI 
+LINYPHIIDAE,Pocadicnemis,pumila,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Pocadicnemis,juncea,Locket & Millidge, 1953 E S W NI RI 
+LINYPHIIDAE,Hypselistes,jacksoni,(O. P.-Cambridge, 1902) E S W NI RI NS 
+LINYPHIIDAE,Oedothorax,gibbosus,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Oedothorax,fuscus,(Blackwall, 1834) E S W NI RI 
+LINYPHIIDAE,Oedothorax,agrestis,(Blackwall, 1853) E S W NI RI 
+LINYPHIIDAE,Oedothorax,retusus,(Westring, 1851) E S W NI RI 
+LINYPHIIDAE,Oedothorax,apicatus,(Blackwall, 1850) E S W RI 
+LINYPHIIDAE,Trichopternoides,thorelli,(Westring, 1861) Trichopterna thorelli E S W NI RI 
+LINYPHIIDAE,Trichopterna,cito,(O. P.-Cambridge, 1872) E NR E 
+LINYPHIIDAE,Pelecopsis,mengei,(Simon, 1884) E S W NI RI 
+LINYPHIIDAE,Pelecopsis,parallela,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Pelecopsis,elongata,(Wider, 1834) S NR NT 
+LINYPHIIDAE,Pelecopsis,radicicola,(L. Koch, 1872) E NR E 
+LINYPHIIDAE,Pelecopsis,susannae,(Simon, 1914) Not present Not present E 
+LINYPHIIDAE,Parapelecopsis,nemoralis,(Blackwall, 1841) Pelecopsis nemoralis Pelecopsis nemoralis E S W NI RI 
+LINYPHIIDAE,Parapelecopsis,nemoralioides,(O. P.-Cambridge, 1884) Pelecopsis nemoralioides Not present E S W RI NS 
+LINYPHIIDAE,Silometopus,elegans,(O. P.-Cambridge, 1872) E S W NI RI 
+LINYPHIIDAE,Silometopus,ambiguus,(O. P.-Cambridge, 1905) E S W NI RI NS 
+LINYPHIIDAE,Silometopus,reussi,(Thorell, 1871) E S W NI RI 
+LINYPHIIDAE,Silometopus,incurvatus,(O. P.-Cambridge, 1873) E S RI NR V 
+LINYPHIIDAE,Mecopisthes,peusi,Wunderlich, 1972 E S W NI RI NS 
+LINYPHIIDAE,Cnephalocotes,obscurus,(Blackwall, 1834) E S W NI RI 
+LINYPHIIDAE,Acartauchenius,scurrilis,(O. P.-Cambridge, 1872) E NR NT 
+LINYPHIIDAE,Trichoncus,saxicola,(O. P.-Cambridge, 1861) E S RI NR V 
+LINYPHIIDAE,Trichoncus,hackmani,Millidge, 1955 E NR V 
+LINYPHIIDAE,Trichoncus,affinis,Kulczyñski, 1894 E NR 
+LINYPHIIDAE,Styloctetor,romanus,(O. P.-Cambridge, 1873) Ceratinopsis romana Ceratinopsis romana E W NR 
+LINYPHIIDAE,Styloctetor,compar,(Westring, 1861) Ceratinopsis stativa Ceratinopsis stativa E W RI NS 
+LINYPHIIDAE,Evansia,merens,O. P.-Cambridge, 1900 E S W RI NS 
+LINYPHIIDAE,Tiso,vagans,(Blackwall, 1834) E S W NI RI 
+LINYPHIIDAE,Tiso,aestivus,(L. Koch, 1872) E S W NS 
+LINYPHIIDAE,Troxochrus,scabriculus,(Westring, 1851) E S W RI 
+LINYPHIIDAE,Minyriolus,pusillus,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Tapinocyba,praecox,(O. P.-Cambridge, 1873) E S W NI RI 
+LINYPHIIDAE,Tapinocyba,pallens,(O. P.-Cambridge, 1872) E S W NI RI 
+LINYPHIIDAE,Tapinocyba,insecta,(L. Koch, 1869) E S W NI RI NS 
+LINYPHIIDAE,Tapinocyba,mitis,(O. P.-Cambridge, 1882) E NR E 
+LINYPHIIDAE,Tapinocyboides,pygmaeus,(Menge, 1869) E S NR DD 
+LINYPHIIDAE,Microctenonyx,subitaneus,(O. P.-Cambridge, 1875) E S W NI RI NS 
+LINYPHIIDAE,Satilatlas,britteni,(Jackson, 1913) E S W NI RI NS 
+LINYPHIIDAE,Thyreosthenius,parasiticus,(Westring, 1851) E S W NI RI 
+LINYPHIIDAE,Thyreosthenius,biovatus,(O. P.-Cambridge, 1875) E S W RI NS 
+LINYPHIIDAE,Monocephalus,fuscipes,(Blackwall, 1836) E S W NI RI 
+LINYPHIIDAE,Monocephalus,castaneipes,(Simon, 1884) E S W NI RI NS 
+LINYPHIIDAE,Lophomma,punctatum,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Saloca,diceros,(O. P.-Cambridge, 1871) E W RI NS 
+LINYPHIIDAE,Gongylidiellum,vivum,(O. P.-Cambridge, 1875) E S W NI RI 
+LINYPHIIDAE,Gongylidiellum,latebricola,(O. P.-Cambridge, 1871) E S W NI RI NS 
+LINYPHIIDAE,Gongylidiellum,murcidum,Simon, 1884 E S W RI NS V 
+LINYPHIIDAE,Micrargus,herbigradus,(Blackwall, 1854) E S W NI RI 
+LINYPHIIDAE,Micrargus,apertus,(O. P.-Cambridge, 1871) E S W 
+LINYPHIIDAE,Micrargus,subaequalis,(Westring, 1851) E S W NI RI 
+LINYPHIIDAE,Micrargus,laudatus,(O. P.-Cambridge, 1881) E W NS 
+LINYPHIIDAE,Notioscopus,sarcinatus,(O. P.-Cambridge, 1872) E S W NS 
+LINYPHIIDAE,Glyphesis,cottonae,(La Touche, 1945) E W RI NR V 
+LINYPHIIDAE,Glyphesis,servulus,(Simon, 1881) E W NR NT 
+LINYPHIIDAE,Erigonella,hiemalis,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Erigonella,ignobilis,(O. P.-Cambridge, 1871) E S W NI RI NS 
+LINYPHIIDAE,Savignia,frontata,Blackwall, 1833 E S W NI RI 
+LINYPHIIDAE,Diplocephalus,cristatus,(Blackwall, 1833) E S W NI RI 
+LINYPHIIDAE,Diplocephalus,permixtus,(O. P.-Cambridge, 1871) E S W NI RI 
+LINYPHIIDAE,Diplocephalus,latifrons,(O. P.-Cambridge, 1863) E S W NI RI 
+LINYPHIIDAE,Diplocephalus,connatus,Bertkau, 1889 E NR CE 
+LINYPHIIDAE,Diplocephalus,picinus,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Diplocephalus,protuberans,(O. P.-Cambridge, 1875) E S W NR V 
+LINYPHIIDAE,Diplocephalus,graecus,(O. P.-Cambridge, 1872) Not present E 
+LINYPHIIDAE,Araeoncus,humilis,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Araeoncus,crassiceps,(Westring, 1861) E S W NI RI NS 
+LINYPHIIDAE,Panamomops,sulcifrons,(Wider, 1834) E W NS 
+LINYPHIIDAE,Lessertia,dentichelis,(Simon, 1884) E W NI RI NS 
+LINYPHIIDAE,Scotinotylus,evansi,(O. P.-Cambridge, 1894) E S NS 
+LINYPHIIDAE,Typhochrestus,digitatus,(O. P.-Cambridge, 1872) 
+LINYPHIIDAE,Typhochrestus,simoni,Lessert, 1907 E W NR CE 
+LINYPHIIDAE,Diplocentria,bidentata,(Emerton, 1882) E S W RI NS 
+LINYPHIIDAE,Wabasso,replicatus,(Holm, 1950) Not present S NR V 
+LINYPHIIDAE,Erigone,dentipalpis,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Erigone,atra,Blackwall, 1833 E S W NI RI 
+LINYPHIIDAE,Erigone,promiscua,(O. P.-Cambridge, 1872) E S W NI RI 
+LINYPHIIDAE,Erigone,arctica,(White, 1852) E S W NI RI 
+LINYPHIIDAE,Erigone,longipalpis,(Sundevall, 1830) E S W NI RI 
+LINYPHIIDAE,Erigone,tirolensis,L. Koch, 1872 S NS 
+LINYPHIIDAE,Erigone,dentigera,O.P. Pickard-Cambridge, 1874 Erigone capra Erigone capra E S W RI NR 
+LINYPHIIDAE,Erigone,welchi,Jackson, 1911 E S W RI NR E 
+LINYPHIIDAE,Erigone,psychrophila,Thorell, 1871 E S NR NT 
+LINYPHIIDAE,Erigone,aletris,Crosby & Bishop, 1928 E S 
+LINYPHIIDAE,Prinerigone,vagans,(Audouin, 1826) Erigone vagans E S W 
+LINYPHIIDAE,Mermessus,trilobatus,(Emerton, 1882) Not present E 
+LINYPHIIDAE,Mecynargus,morulus,(O. P.-Cambridge, 1873) Rhaebothorax morulus E S W NI RI NS 
+LINYPHIIDAE,Mecynargus,paetulus,(O. P.-Cambridge, 1875) Rhaebothorax paetulus S NR V 
+LINYPHIIDAE,Semljicola,faustus,(O. P.-Cambridge, 1900) Latithorax faustus Latithorax faustus E S W NI RI NS 
+LINYPHIIDAE,Semljicola,caliginosus,(Falconer, 1910) E S NR E 
+LINYPHIIDAE,Donacochara,speciosa,(Thorell, 1875) E NI RI NS 
+LINYPHIIDAE,Leptorhoptrum,robustum,(Westring, 1851) E S W NI RI 
+LINYPHIIDAE,Drepanotylus,uncatus,(O. P.-Cambridge, 1873) E S W NI RI 
+LINYPHIIDAE,Leptothrix,hardyi,(Blackwall, 1850) E S W NI RI NS 
+LINYPHIIDAE,Hilaira,excisa,(O. P.-Cambridge, 1871) E S W NI RI 
+LINYPHIIDAE,Hilaira,nubigena,Hull, 1911 E S NR V 
+LINYPHIIDAE,Hilaira,pervicax,Hull, 1908 E S W NI NS 
+LINYPHIIDAE,Oreoneta,frigida,(Thorell, 1872) Hilaira frigida Hilaira frigida E S W NI RI 
+LINYPHIIDAE,Halorates,reprobus,(O. P.-Cambridge, 1879) E S W NI RI NS 
+LINYPHIIDAE,Collinsia,inerrans,(O. P.-Cambridge, 1885) Milleriana inerrans Milleriana inerrans E S W RI 
+LINYPHIIDAE,Collinsia,distincta,(Simon, 1884) Halorates distinctus Halorates distinctus E S W NS 
+LINYPHIIDAE,Collinsia,holmgreni,(Thorell, 1871) Halorates holmgreni Halorates holmgreni S NS 
+LINYPHIIDAE,Carorita,limnaea,(Crosby & Bishop, 1927) 
+LINYPHIIDAE,Karita,paludosa,(Duffey, 1971) Carorita paludosa E NI RI NR V 
+LINYPHIIDAE,Wiehlea,calcarifera,(Simon, 1884) E NR E 
+LINYPHIIDAE,Mioxena,blanda,(Simon, 1884) E W RI NR DD 
+LINYPHIIDAE,Caviphantes,saxetorum,(Hull, 1916) E S W NR NT 
+LINYPHIIDAE,Asthenargus,paganus,(Simon, 1884) E S W NI RI NS 
+LINYPHIIDAE,Jacksonella,falconeri,(Jackson, 1908) E S W NI RI NS 
+LINYPHIIDAE,Pseudomaro,aenigmaticus,Denis, 1966 E NR DD 
+LINYPHIIDAE,Ostearius,melanopygius,(O. P.-Cambridge, 1879) E S W NI RI 
+LINYPHIIDAE,Aphileta,misera,(O. P.-Cambridge, 1882) E S W NI RI 
+LINYPHIIDAE,Porrhomma,pygmaeum,(Blackwall, 1834) E S W NI RI 
+LINYPHIIDAE,Porrhomma,convexum,(Westring, 1851) E S W NI RI NS 
+LINYPHIIDAE,Porrhomma,rosenhaueri,(L. Koch, 1872) W RI NR NT 
+LINYPHIIDAE,Porrhomma,pallidum,Jackson, 1913 E S W NI RI 
+LINYPHIIDAE,Porrhomma,campbelli,F. O. P.-Cambridge, 1894 E S W NI RI NS 
+LINYPHIIDAE,Porrhomma,microphthalmum,(O. P.-Cambridge, 1871) E S W 
+LINYPHIIDAE,Porrhomma,errans,(Blackwall, 1841) E S W RI NS 
+LINYPHIIDAE,Porrhomma,egeria,Simon, 1884 E S W RI NS 
+LINYPHIIDAE,Porrhomma,oblitum,(O. P.-Cambridge, 1871) E W RI NS 
+LINYPHIIDAE,Porrhomma,cambridgei,Merrett, 1994 Not present E NR DD 
+LINYPHIIDAE,Porrhomma,montanum,Jackson, 1913 E S W NI RI NS 
+LINYPHIIDAE,Agyneta,subtilis,(O. P.-Cambridge, 1863) E S W NI RI 
+LINYPHIIDAE,Agyneta,conigera,(O. P.-Cambridge, 1863) E S W NI RI 
+LINYPHIIDAE,Agyneta,decora,(O. P.-Cambridge, 1871) E S W NI RI 
+LINYPHIIDAE,Agyneta,cauta,(O. P.-Cambridge, 1902) E S W NI RI NS 
+LINYPHIIDAE,Agyneta,olivacea,(Emerton, 1882) E S W NI RI NS 
+LINYPHIIDAE,Agyneta,ramosa,Jackson, 1912 E S W RI 
+LINYPHIIDAE,Agyneta,innotabilis,(O. P.-Cambridge, 1863) Meioneta innotabilis Meioneta innotabilis E S W NI RI 
+LINYPHIIDAE,Agyneta,rurestris,(C. L. Koch, 1836) Meioneta rurestris Meioneta rurestris E S W NI RI 
+LINYPHIIDAE,Agyneta,mollis,(O. P.-Cambridge, 1871) Meioneta mollis Meioneta mollis E W NI RI NR NT 
+LINYPHIIDAE,Agyneta,saxatilis,(Blackwall, 1844) Meioneta saxatilis Meioneta saxatilis E S W NI RI 
+LINYPHIIDAE,Agyneta,mossica,(Schikora, 1993) Meioneta mossica Not present E S W NI RI NS 
+LINYPHIIDAE,Agyneta,simplicitarsis,(Simon, 1884) Meioneta simplicitarsis Meioneta simplicitarsis 
+LINYPHIIDAE,Agyneta,affinis,(Kulczyñski, 1898) Meioneta beata Meioneta beata E S W NI RI 
+LINYPHIIDAE,Agyneta,fuscipalpa,(C. L. Koch, 1836) Meioneta fuscipalpa Not present E NR V 
+LINYPHIIDAE,Agyneta,gulosa,(L. Koch, 1869) Meioneta gulosa Meioneta gulosa E S W NI RI NS 
+LINYPHIIDAE,Agyneta,nigripes,(Simon, 1884) Meioneta nigripes Meioneta nigripes S W NS 
+LINYPHIIDAE,Microneta,viaria,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Maro,minutus,O. P.-Cambridge, 1906 E S W RI NS 
+LINYPHIIDAE,Maro,sublestus,Falconer, 1915 E S RI NR E 
+LINYPHIIDAE,Maro,lepidus,Casemir, 1961 E S W NR E 
+LINYPHIIDAE,Syedra,gracilis,(Menge, 1869) E S NS 
+LINYPHIIDAE,Syedra,myrmicarum,(Kulczyñski, 1882) Not present Not present E 
+LINYPHIIDAE,Centromerus,sylvaticus,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Centromerus,prudens,(O. P.-Cambridge, 1873) E S W NI RI 
+LINYPHIIDAE,Centromerus,arcanus,(O. P.-Cambridge, 1873) E S W NI RI 
+LINYPHIIDAE,Centromerus,levitarsis,(Simon, 1884) E S RI NR E 
+LINYPHIIDAE,Centromerus,dilutus,(O. P.-Cambridge, 1875) E S W NI RI 
+LINYPHIIDAE,Centromerus,capucinus,(Simon, 1884) E NR NT 
+LINYPHIIDAE,Centromerus,incilium,(L. Koch, 1881) E S NS 
+LINYPHIIDAE,Centromerus,semiater,(L. Koch, 1879) E NR E 
+LINYPHIIDAE,Centromerus,brevipalpus,(Menge, 1866) Centromerus brevivulvatus Centromerus aequalis E S NR E 
+LINYPHIIDAE,Centromerus,serratus,(O. P.-Cambridge, 1875) E NR E 
+LINYPHIIDAE,Centromerus,albidus,Simon, 1929 E RI NR CE 
+LINYPHIIDAE,Centromerus,cavernarum,(L. Koch, 1872) E NR NT 
+LINYPHIIDAE,Centromerus,persimilis,(O. P.-Cambridge, 1912) E RI NR DD 
+LINYPHIIDAE,Centromerus,minutissimus,Merrett & Powell, 1993 Not present E NR DD 
+LINYPHIIDAE,Tallusia,experta,(O. P.-Cambridge, 1871) E S W NI RI 
+LINYPHIIDAE,Centromerita,bicolor,(Blackwall, 1833) E S W NI RI 
+LINYPHIIDAE,Centromerita,concinna,(Thorell, 1875) E S W NI RI 
+LINYPHIIDAE,Sintula,corniger,(Blackwall, 1856) E S W NI RI NS 
+LINYPHIIDAE,Oreonetides,vaginatus,(Thorell, 1872) E S W RI NS 
+LINYPHIIDAE,Saaristoa,abnormis,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Saaristoa,firma,(O. P.-Cambridge, 1905) E S W NI RI NS 
+LINYPHIIDAE,Macrargus,rufus,(Wider, 1834) 
+LINYPHIIDAE,Macrargus,carpenteri,(O. P.-Cambridge, 1894) E S NS 
+LINYPHIIDAE,Bathyphantes,approximatus,(O. P.-Cambridge, 1871) E S W NI RI 
+LINYPHIIDAE,Bathyphantes,gracilis,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Bathyphantes,parvulus,(Westring, 1851) E S W NI RI 
+LINYPHIIDAE,Bathyphantes,nigrinus,(Westring, 1851) E S W NI RI 
+LINYPHIIDAE,Bathyphantes,setiger,F. O. P.-Cambridge, 1894 E S W NI RI NS 
+LINYPHIIDAE,Kaestneria,dorsalis,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Kaestneria,pullata,(O. P.-Cambridge, 1863) E S W NI RI 
+LINYPHIIDAE,Diplostyla,concolor,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Poeciloneta,variegata,(Blackwall, 1841) Poeciloneta globosa E S W NI RI 
+LINYPHIIDAE,Drapetisca,socialis,(Sundevall, 1833) E S W NI RI 
+LINYPHIIDAE,Tapinopa,longidens,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Floronia,bucculenta,(Clerck, 1757) E S W NI RI 
+LINYPHIIDAE,Taranucnus,setosus,(O. P.-Cambridge, 1863) E S W NI RI NS 
+LINYPHIIDAE,Labulla,thoracica,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Stemonyphantes,lineatus,(Linnaeus, 1758) E S W NI RI 
+LINYPHIIDAE,Bolyphantes,luteolus,(Blackwall, 1833) E S W NI RI 
+LINYPHIIDAE,Bolyphantes,alticeps,(Sundevall, 1833) E S W RI 
+LINYPHIIDAE,Nothophantes,horridus,Merrett & Stevens, 1995 Not present E NR E 
+LINYPHIIDAE,Megalepthyphantes,nebulosus,(Sundevall, 1830) Lepthyphantes nebulosus E S W NI RI 
+LINYPHIIDAE,Lepthyphantes,leprosus,(Ohlert, 1865) E S W NI RI 
+LINYPHIIDAE,Lepthyphantes,minutus,(Blackwall, 1833) E S W NI RI 
+LINYPHIIDAE,Mughiphantes,whymperi,(F. O. P.-Cambridge, 1894) Lepthyphantes whymperi E S W RI NS 
+LINYPHIIDAE,Obscuriphantes,obscurus,(Blackwall, 1841) Lepthyphantes obscurus E S W NI RI 
+LINYPHIIDAE,Tenuiphantes,alacris,(Blackwall, 1853) Lepthyphantes alacris E S W NI RI 
+LINYPHIIDAE,Tenuiphantes,tenuis,(Blackwall, 1852) Lepthyphantes tenuis E S W NI RI 
+LINYPHIIDAE,Tenuiphantes,zimmermanni,(Bertkau, 1890) Lepthyphantes zimmermanni E S W NI RI 
+LINYPHIIDAE,Tenuiphantes,cristatus,(Menge, 1866) Lepthyphantes cristatus E S W NI RI 
+LINYPHIIDAE,Tenuiphantes,mengei,(Kulczyñski, 1887) Lepthyphantes mengei E S W NI RI 
+LINYPHIIDAE,Tenuiphantes,flavipes,(Blackwall, 1854) Lepthyphantes flavipes E S W NI RI 
+LINYPHIIDAE,Tenuiphantes,tenebricola,(Wider, 1834) Lepthyphantes tenebricola E S W NI RI 
+LINYPHIIDAE,Palliduphantes,ericaeus,(Blackwall, 1853) Lepthyphantes ericaeus E S W NI RI 
+LINYPHIIDAE,Palliduphantes,pallidus,(O. P.-Cambridge, 1871) Lepthyphantes pallidus E S W NI RI 
+LINYPHIIDAE,Palliduphantes,insignis,(O. P.-Cambridge, 1913) Lepthyphantes insignis E S W RI NS 
+LINYPHIIDAE,Palliduphantes,antroniensis,(Schenkel, 1933) Lepthyphantes antroniensis S NR CE 
+LINYPHIIDAE,Piniphantes,pinicola,(Simon, 1884) Lepthyphantes pinicola E S W NR 
+LINYPHIIDAE,Oryphantes,angulatus,(O. P.-Cambridge, 1881) Lepthyphantes angulatus E S W NI RI NS 
+LINYPHIIDAE,Improphantes,complicatus,(Emerton, 1882) Lepthyphantes complicatus S NR NT 
+LINYPHIIDAE,Agnyphantes,expunctus,(O. P.-Cambridge, 1875) Lepthyphantes expunctus E S NS 
+LINYPHIIDAE,Midia,midas,(Simon, 1884) Lepthyphantes midas E NR E 
+LINYPHIIDAE,Helophora,insignis,(Blackwall, 1841) E S W NI RI 
+LINYPHIIDAE,Pityohyphantes,phrygianus,(C. L. Koch, 1836) E S NS 
+LINYPHIIDAE,Linyphia,triangularis,(Clerck, 1757) E S W NI RI 
+LINYPHIIDAE,Linyphia,hortensis,Sundevall, 1830 E S W NI RI 
+LINYPHIIDAE,Neriene,montana,(Clerck, 1757) E S W NI RI 
+LINYPHIIDAE,Neriene,clathrata,(Sundevall, 1830) E S W NI RI 
+LINYPHIIDAE,Neriene,peltata,(Wider, 1834) E S W NI RI 
+LINYPHIIDAE,Neriene,furtiva,(O. P.-Cambridge, 1871) E W NS 
+LINYPHIIDAE,Neriene,radiata,(Walckenaer, 1841) E S NR NT 
+LINYPHIIDAE,Microlinyphia,pusilla,(Sundevall, 1830) E S W NI RI 
+LINYPHIIDAE,Microlinyphia,impigra,(O. P.-Cambridge, 1871) E S W NI RI 
+LINYPHIIDAE,Allomengea,scopigera,(Grube, 1859) E S W NI RI 
+LINYPHIIDAE,Allomengea,vidua,(L. Koch, 1879) E S W NI RI NS 
+TETRAGNATHIDAE,Tetragnatha,extensa,(Linnaeus, 1758) E S W NI RI 
+TETRAGNATHIDAE,Tetragnatha,pinicola,L. Koch, 1870 E S W RI 
+TETRAGNATHIDAE,Tetragnatha,montana,Simon, 1874 E S W NI RI 
+TETRAGNATHIDAE,Tetragnatha,obtusa,C. L. Koch, 1837 E S W NI RI 
+TETRAGNATHIDAE,Tetragnatha,nigrita,Lendl, 1886 E W NI RI 
+TETRAGNATHIDAE,Tetragnatha,striata,L. Koch, 1862 E S W RI 
+TETRAGNATHIDAE,Pachygnatha,clercki,Sundevall, 1823 E S W NI RI 
+TETRAGNATHIDAE,Pachygnatha,listeri,Sundevall, 1830 E S W RI 
+TETRAGNATHIDAE,Pachygnatha,degeeri,Sundevall, 1830 E S W NI RI 
+TETRAGNATHIDAE,Metellina,segmentata,(Clerck, 1757) Meta segmentata 
+TETRAGNATHIDAE,Metellina,mengei,(Blackwall, 1869) Meta mengei E S W NI RI 
+TETRAGNATHIDAE,Metellina,merianae,(Scopoli, 1763) Meta merianae E S W NI RI 
+TETRAGNATHIDAE,Meta,menardi,(Latreille, 1804) E S W NI RI 
+TETRAGNATHIDAE,Meta,bourneti,Simon, 1922 E W NS 
+ARANEIDAE,Gibbaranea,gibbosa,(Walckenaer, 1802) E S W NI RI 
+ARANEIDAE,Araneus,angulatus,Clerck, 1757 E NS 
+ARANEIDAE,Araneus,diadematus,Clerck, 1757 E S W NI RI 
+ARANEIDAE,Araneus,quadratus,Clerck, 1757 E S W NI RI 
+ARANEIDAE,Araneus,marmoreus,Clerck, 1757 E S W 
+ARANEIDAE,Araneus,alsine,(Walckenaer, 1802) E S NS 
+ARANEIDAE,Araneus,sturmi,(Hahn, 1831) E S W RI 
+ARANEIDAE,Araneus,triguttatus,(Fabricius, 1775) E S W NI 
+ARANEIDAE,Larinioides,cornutus,(Clerck, 1757) E S W NI RI 
+ARANEIDAE,Larinioides,sclopetarius,(Clerck, 1757) E S W NI RI 
+ARANEIDAE,Larinioides,patagiatus,(Clerck, 1757) E S W NI RI NS 
+ARANEIDAE,Nuctenea,umbratica,(Clerck, 1757) E S W NI RI 
+ARANEIDAE,Agalenatea,redii,(Scopoli, 1763) E S W NI RI 
+ARANEIDAE,Neoscona,adianta,(Walckenaer, 1802) E W RI 
+ARANEIDAE,Araniella,cucurbitina,(Clerck, 1757) E S W NI RI 
+ARANEIDAE,Araniella,opisthographa,(Kulczyñski, 1905) E S W NI RI 
+ARANEIDAE,Araniella,inconspicua,(Simon, 1874) E NS 
+ARANEIDAE,Araniella,alpica,(L. Koch, 1869) E W NR E 
+ARANEIDAE,Araniella,displicata,(Hentz, 1847) E NR NT 
+ARANEIDAE,Zilla,diodia,(Walckenaer, 1802) E W 
+ARANEIDAE,Hypsosinga,albovittata,(Westring, 1851) E S W RI NS 
+ARANEIDAE,Hypsosinga,pygmaea,(Sundevall, 1831) E S W NI RI 
+ARANEIDAE,Hypsosinga,sanguinea,(C. L. Koch, 1844) E NS 
+ARANEIDAE,Hypsosinga,heri,(Hahn, 1831) E NR V 
+ARANEIDAE,Singa,hamata,(Clerck, 1757) E S W NS 
+ARANEIDAE,Cercidia,prominens,(Westring, 1851) E S W NS 
+ARANEIDAE,Zygiella,x-notata,(Clerck, 1757) 
+ARANEIDAE,Zygiella,atrica,(C. L. Koch, 1845) E S W NI RI 
+ARANEIDAE,Leviellus,stroemi,(Thorell, 1870) Stroemiellus stroemi Zygiella stroemi E NR NT 
+ARANEIDAE,Mangora,acalypha,(Walckenaer, 1802) E W RI 
+ARANEIDAE,Cyclosa,conica,(Pallas, 1772) E S W NI RI 
+ARANEIDAE,Argiope,bruennichi,(Scopoli, 1772) E W 
+LYCOSIDAE,Pardosa,agricola,(Thorell, 1856) E S W NI RI 
+LYCOSIDAE,Pardosa,agrestis,(Westring, 1861) E S W NI RI NS 
+LYCOSIDAE,Pardosa,purbeckensis,F. O. P.-Cambridge, 1895 Pardosa agrestis E S W RI 
+LYCOSIDAE,Pardosa,monticola,(Clerck, 1757) E S W NI RI 
+LYCOSIDAE,Pardosa,palustris,(Linnaeus, 1758) E S W NI RI 
+LYCOSIDAE,Pardosa,pullata,(Clerck, 1757) E S W NI RI 
+LYCOSIDAE,Pardosa,prativaga,(L. Koch, 1870) E S W NI RI 
+LYCOSIDAE,Pardosa,amentata,(Clerck, 1757) E S W NI RI 
+LYCOSIDAE,Pardosa,nigriceps,(Thorell, 1856) E S W NI RI 
+LYCOSIDAE,Pardosa,lugubris,(Walckenaer, 1802) E S RI NS 
+LYCOSIDAE,Pardosa,saltans,Töpfer-Hofmann, 2000 Not present E S W RI 
+LYCOSIDAE,Pardosa,hortensis,(Thorell, 1872) E S W 
+LYCOSIDAE,Pardosa,tenuipes,C. L. Koch, 1847 Pardosa proxima Pardosa proxima E S W NS 
+LYCOSIDAE,Pardosa,trailli,(O. P.-Cambridge, 1873) E S W NR V 
+LYCOSIDAE,Pardosa,paludicola,(Clerck, 1757) E NR E 
+LYCOSIDAE,Hygrolycosa,rubrofasciata,(Ohlert, 1865) E NR E 
+LYCOSIDAE,Xerolycosa,nemoralis,(Westring, 1861) E NS 
+LYCOSIDAE,Xerolycosa,miniata,(C. L. Koch, 1834) E S W NS 
+LYCOSIDAE,Alopecosa,pulverulenta,(Clerck, 1757) E S W NI RI 
+LYCOSIDAE,Alopecosa,cuneata,(Clerck, 1757) E W NI RI NS 
+LYCOSIDAE,Alopecosa,accentuata,E S W NI RI 
+LYCOSIDAE,Alopecosa,fabrilis,(Clerck, 1757) E NR CE 
+LYCOSIDAE,Trochosa,ruricola,(De Geer, 1778) E S W NI RI 
+LYCOSIDAE,Trochosa,robusta,(Simon, 1876) E NR V 
+LYCOSIDAE,Trochosa,terricola,Thorell, 1856 E S W NI RI 
+LYCOSIDAE,Trochosa,spinipalpis,(F. O. P.-Cambridge, 1895) 
+LYCOSIDAE,Arctosa,fulvolineata,(Lucas, 1846) E NR NT 
+LYCOSIDAE,Arctosa,perita,(Latreille, 1799) E S W NI RI 
+LYCOSIDAE,Arctosa,leopardus,(Sundevall, 1833) E S W NI RI 
+LYCOSIDAE,Arctosa,cinerea,(Fabricius, 1777) E S W RI NS 
+LYCOSIDAE,Arctosa,alpigena,(Doleschall, 1852) Tricca alpigena S NR V 
+LYCOSIDAE,Pirata,piraticus,(Clerck, 1757) E S W NI RI 
+LYCOSIDAE,Pirata,tenuitarsis,Simon, 1876 E S W NI RI NS 
+LYCOSIDAE,Pirata,piscatorius,(Clerck, 1757) E S W NI RI NS 
+LYCOSIDAE,Piratula,hygrophila,(Thorell, 1872) Pirata hygrophilus Pirata hygrophilus E S W NI RI 
+LYCOSIDAE,Piratula,uliginosa,(Thorell, 1856) Pirata uliginosus Pirata uliginosus E S W NI RI 
+LYCOSIDAE,Piratula,latitans,(Blackwall, 1841) Pirata latitans Pirata latitans E S W RI 
+LYCOSIDAE,Aulonia,albimana,(Walckenaer, 1805) E NR CE 
+PISAURIDAE,Pisaura,mirabilis,(Clerck, 1757) E S W NI RI 
+PISAURIDAE,Dolomedes,fimbriatus,(Clerck, 1757) E S W RI NS 
+PISAURIDAE,Dolomedes,plantarius,(Clerck, 1757) E W NR V 
+OXYOPIDAE,Oxyopes,heterophthalmus,(Latreille, 1804) E NR V 
+AGELENIDAE,Agelena,labyrinthica,(Clerck, 1757) E W RI 
+AGELENIDAE,Textrix,denticulata,(Olivier, 1789) E S W NI RI 
+AGELENIDAE,Eratigena,agrestis,(Walckenaer, 1802) Tegenaria agrestis Tegenaria agrestis E S W RI 
+AGELENIDAE,Eratigena,atrica,(C. L. Koch, 1843) Tegenaria atrica Tegenaria atrica E S W RI 
+AGELENIDAE,Eratigena,duellica,(Simon, 1875) Tegenaria gigantea Tegenaria duellica E S W NI RI 
+AGELENIDAE,Eratigena,picta,(Simon, 1870) Tegenaria picta Appendix 1 as T. picta E NR V 
+AGELENIDAE,Eratigena,saeva,(Blackwall, 1844) Tegenaria saeva Tegenaria saeva E S W NI RI 
+AGELENIDAE,Tegenaria,domestica,(Clerck, 1757) E S W NI RI 
+AGELENIDAE,Tegenaria,ferruginea,(Panzer, 1804) E 
+AGELENIDAE,Tegenaria,parietina,(Fourcroy, 1785) E RI 
+AGELENIDAE,Tegenaria,hasperi,Chyzer, 1897 Not present Not present E Ab 
+AGELENIDAE,Tegenaria,silvestris,C. L. Koch, 1872 E S W NI RI 
+AGELENIDAE,Coelotes,atropos,(Walckenaer, 1830) from Amaurobiidae from Agelenidae E S W 
+AGELENIDAE,Coelotes,terrestris,(Wider, 1834) from Amaurobiidae from Agelenidae E S W NS 
+CYBAEIDAE,Cryphoeca,silvicola,(C. L. Koch, 1834) from Dictynidae from Agelenidae E S W NI RI 
+CYBAEIDAE,Tuberta,maerens,(O. P.-Cambridge, 1863) from Dictynidae from Agelenidae E NR E 
+HAHNIIDAE,Antistea,elegans,(Blackwall, 1841) E S W NI RI 
+HAHNIIDAE,Iberina,montana,(Blackwall, 1841) Hahnia montana Hahnia montana E S W NI RI 
+HAHNIIDAE,Iberina,candida,(Simon, 1875) Hahnia candida Hahnia candida E NR V 
+HAHNIIDAE,Iberina,microphthalma,(Snazell & Duffey, 1980) Hahnia microphthalma Hahnia microphthalma E NR DD 
+HAHNIIDAE,Hahnia,nava,(Blackwall, 1841) E S W NI RI 
+HAHNIIDAE,Hahnia,helveola,Simon, 1875 E S W NI RI 
+HAHNIIDAE,Hahnia,pusilla,C. L. Koch, 1841 E S W RI NS 
+HAHNIIDAE,Cicurina,cicur,(Fabricius, 1793) from Dictynidae from Agelenidae E S W NS 
+HAHNIIDAE,Mastigusa,arietina,(Thorell, 1871) from Dictynidae Tetrilus arietina E E RE 
+HAHNIIDAE,Mastigusa,macrophthalma,(Kulczyñski, 1897) from Dictynidae Tetrilus macrophthalma E NR V 
+DICTYNIDAE,Dictyna,arundinacea,(Linnaeus, 1758) E S W NI RI 
+DICTYNIDAE,Dictyna,pusilla,Thorell, 1856 E S W NS 
+DICTYNIDAE,Dictyna,major,Menge, 1869 S NR CE 
+DICTYNIDAE,Dictyna,uncinata,Thorell, 1856 E S W NI RI 
+DICTYNIDAE,Brigittea,latens,(Fabricius, 1775) Dictyna latens Dictyna latens E S W NI RI 
+DICTYNIDAE,Nigma,puella,(Simon, 1870) E W RI NS 
+DICTYNIDAE,Nigma,flavescens,(Walckenaer, 1830) Not present Nigma flavescens E 
+DICTYNIDAE,Nigma,walckenaeri,(Roewer, 1951) E 
+DICTYNIDAE,Lathys,humilis,(Blackwall, 1855) E S W 
+DICTYNIDAE,Lathys,heterophthalma,Kulczyñski, 1891 Lathys nielseni Appendix 1 E NR V 
+DICTYNIDAE,Lathys,stigmatisata,(Menge, 1869) E W NR V 
+DICTYNIDAE,Argenna,subnigra,(O. P.-Cambridge, 1861) E W RI NS 
+DICTYNIDAE,Argenna,patula,(Simon, 1874) E S W NS 
+DICTYNIDAE,Altella,lucida,(Simon, 1874) E NR CE 
+DICTYNIDAE,Argyroneta,aquatica,(Clerck, 1757) from Cybaeidae from Argyronetidae 
+AMAUROBIIDAE,Amaurobius,fenestralis,(Stroem, 1768) E S W NI RI 
+AMAUROBIIDAE,Amaurobius,similis,(Blackwall, 1861) E S W NI RI 
+AMAUROBIIDAE,Amaurobius,ferox,(Walckenaer, 1830) E S W NI RI 
+ANYPHAENIDAE,Anyphaena,accentuata,(Walckenaer, 1802) E S W NI RI 
+ANYPHAENIDAE,Anyphaena,numida,Simon, 1897 Not present Not present E 
+ANYPHAENIDAE,Anyphaena,sabina,L. Koch, 1866 Not present Not present E 
+LIOCRANIDAE,Agroeca,brunnea,(Blackwall, 1833) E S W 
+LIOCRANIDAE,Agroeca,proxima,(O. P.-Cambridge, 1871) E S W NI RI 
+LIOCRANIDAE,Agroeca,inopina,O. P.-Cambridge, 1886 E W 
+LIOCRANIDAE,Agroeca,lusatica,(L. Koch, 1875) E NR E 
+LIOCRANIDAE,Agroeca,dentigera,Kulczyñski, 1913 Not present W NR DD 
+LIOCRANIDAE,Agroeca,cuprea,Menge, 1873 E S NR NT 
+LIOCRANIDAE,Liocranoeca,striata,(Kulczyñski, 1882) Agraecina striata Agroeca striata E S W NI RI NS 
+LIOCRANIDAE,Apostenus,fuscus,Westring, 1851 Appendix 1 E NR V 
+LIOCRANIDAE,Scotina,celans,(Blackwall, 1841) E S W RI NS 
+LIOCRANIDAE,Scotina,gracilipes,(Blackwall, 1859) E S W NI RI NS 
+LIOCRANIDAE,Scotina,palliardii,(L. Koch, 1881) E NR E 
+LIOCRANIDAE,Liocranum,rupicola,(Walckenaer, 1830) E W RI NS 
+PHRUROLITHIDAE,Phrurolithus,festivus,(C. L. Koch, 1835) E S W NI RI 
+PHRUROLITHIDAE,Phrurolithus,minimus,C. L. Koch, 1839 E NS 
+CLUBIONIDAE,Clubiona,corticalis,(Walckenaer, 1802) E W 
+CLUBIONIDAE,Clubiona,reclusa,O. P.-Cambridge, 1863 E S W NI RI 
+CLUBIONIDAE,Clubiona,subsultans,Thorell, 1875 S NR NT 
+CLUBIONIDAE,Clubiona,stagnatilis,Kulczyñski, 1897 E S W NI RI 
+CLUBIONIDAE,Clubiona,rosserae,Locket, 1953 E NR V 
+CLUBIONIDAE,Clubiona,norvegica,Strand, 1900 E S W NS 
+CLUBIONIDAE,Clubiona,caerulescens,L. Koch, 1867 E S W NR V 
+CLUBIONIDAE,Clubiona,pallidula,(Clerck, 1757) E S W NI RI 
+CLUBIONIDAE,Clubiona,phragmitis,C. L. Koch, 1843 E S W NI RI 
+CLUBIONIDAE,Clubiona,terrestris,Westring, 1851 E S W NI RI 
+CLUBIONIDAE,Clubiona,frutetorum,L. Koch, 1866 Not present RI 
+CLUBIONIDAE,Clubiona,neglecta,O. P.-Cambridge, 1862 E S W NI RI 
+CLUBIONIDAE,Clubiona,pseudoneglecta,Wunderlich, 1994 Not present E NR V 
+CLUBIONIDAE,Clubiona,frisia,Wunderlich & Schütt, 1995 Clubiona similis E NR NT 
+CLUBIONIDAE,Clubiona,lutescens,Westring, 1851 E S W NI RI 
+CLUBIONIDAE,Clubiona,comta,C. L. Koch, 1839 E S W NI RI 
+CLUBIONIDAE,Clubiona,brevipes,Blackwall, 1841 E S W NI RI 
+CLUBIONIDAE,Clubiona,trivialis,C. L. Koch, 1843 E S W NI RI 
+CLUBIONIDAE,Clubiona,juvenis,Simon, 1878 E RI NR NT 
+CLUBIONIDAE,Clubiona,diversa,O. P.-Cambridge, 1862 E S W NI RI 
+CLUBIONIDAE,Clubiona,subtilis,L. Koch, 1867 E S W RI 
+CLUBIONIDAE,Porrhoclubiona,genevensis,(L. Koch, 1866) Clubiona genevensis Clubiona genevensis E W NR NT 
+CLUBIONIDAE,Porrhoclubiona,leucaspis,(Simon, 1932) Clubiona leucaspis Not present E 
+CHEIRACANTHIIDAE,Cheiracanthium,erraticum,(Walckenaer, 1802) E S W NI RI 
+CHEIRACANTHIIDAE,Cheiracanthium,pennyi,O. P.-Cambridge, 1873 E NR E 
+CHEIRACANTHIIDAE,Cheiracanthium,virescens,(Sundevall, 1833) E S W NI RI NS 
+ZODARIIDAE,Zodarion,italicum,(Canestrini, 1868) Appendix 1 E NS 
+ZODARIIDAE,Zodarion,vicinum,Denis, 1935 Not present E NR V 
+ZODARIIDAE,Zodarion,rubidum,Simon, 1914 Not present E NR 
+ZODARIIDAE,Zodarion,fuscum,(Simon, 1870) Not present E W NR V 
+GNAPHOSIDAE,Drassodes,lapidosus,(Walckenaer, 1802) E S W NI RI 
+GNAPHOSIDAE,Drassodes,cupreus,(Blackwall, 1834) E S W NI RI 
+GNAPHOSIDAE,Drassodes,pubescens,(Thorell, 1856) E S W RI NS 
+GNAPHOSIDAE,Haplodrassus,signifer,(C. L. Koch, 1839) E S W NI RI 
+GNAPHOSIDAE,Haplodrassus,dalmatensis,(L. Koch, 1866) E W NS 
+GNAPHOSIDAE,Haplodrassus,umbratilis,(L. Koch, 1866) 
+GNAPHOSIDAE,Haplodrassus,soerenseni,(Strand, 1900) S NR E 
+GNAPHOSIDAE,Haplodrassus,silvestris,(Blackwall, 1833) E S W NS 
+GNAPHOSIDAE,Haplodrassus,minor,(O. P.-Cambridge, 1879) E W NS 
+GNAPHOSIDAE,Scotophaeus,blackwalli,(Thorell, 1871) E S W NI RI 
+GNAPHOSIDAE,Scotophaeus,scutulatus,(L. Koch, 1866) Appendix 2 E Ah 
+GNAPHOSIDAE,Phaeocedus,braccatus,(L. Koch, 1866) E NR V 
+GNAPHOSIDAE,Zelotes,electus,(C. L. Koch, 1839) E S W NI RI NS 
+GNAPHOSIDAE,Zelotes,latreillei,(Simon, 1878) E S W NI RI 
+GNAPHOSIDAE,Zelotes,apricorum,(L. Koch, 1876) E S W RI 
+GNAPHOSIDAE,Zelotes,subterraneus,(C. L. Koch, 1833) Appendix 1 E S W NS 
+GNAPHOSIDAE,Zelotes,longipes,(L. Koch, 1866) Zelotes serotinus E NR V 
+GNAPHOSIDAE,Zelotes,petrensis,(C. L. Koch, 1839) E NR 
+GNAPHOSIDAE,Trachyzelotes,pedestris,(C. L. Koch, 1837) Zelotes pedestris E W 
+GNAPHOSIDAE,Urozelotes,rusticus,(L. Koch, 1872) Zelotes rusticus E W 
+GNAPHOSIDAE,Drassyllus,lutetianus,(L. Koch, 1866) Zelotes lutetianus E W RI NS 
+GNAPHOSIDAE,Drassyllus,pusillus,(C. L. Koch, 1833) Zelotes pusillus E S W NI RI 
+GNAPHOSIDAE,Drassyllus,praeficus,(L. Koch, 1866) Zelotes praeficus E W NS 
+GNAPHOSIDAE,Gnaphosa,lugubris,(C. L. Koch, 1839) E NR V 
+GNAPHOSIDAE,Gnaphosa,occidentalis,Simon, 1878 E NR NT 
+GNAPHOSIDAE,Gnaphosa,nigerrima,L. Koch, 1877 Not present E NR V 
+GNAPHOSIDAE,Gnaphosa,leporina,(L. Koch, 1866) E S W NS 
+GNAPHOSIDAE,Callilepis,nocturna,(Linnaeus, 1758) E W NR V 
+GNAPHOSIDAE,Micaria,micans,
+GNAPHOSIDAE,Micaria,pulicaria,(Sundevall, 1831) E S W NI RI 
+GNAPHOSIDAE,Micaria,albovittata,(Lucas, 1846) Micaria romana E NR V 
+GNAPHOSIDAE,Micaria,alpina,L. Koch, 1872 S W NR V 
+GNAPHOSIDAE,Micaria,subopaca,Westring, 1861 E S NS 
+GNAPHOSIDAE,Micaria,silesiaca,L. Koch, 1875 E NR NT 
+MITURGIDAE,Zora,spinimana,(Sundevall, 1833) E S W NI RI 
+MITURGIDAE,Zora,armillata,Simon, 1878 E NR CE 
+MITURGIDAE,Zora,nemoralis,(Blackwall, 1861) E S W NR V 
+MITURGIDAE,Zora,silvestris,Kulczyñski, 1897 E NR CE 
+ZOROPSIDAE,Zoropsis,spinimana,(Dufour, 1820) Not present Not present E 
+SPARASSIDAE,Micrommata,virescens,(Clerck, 1757) E W RI NS 
+PHILODROMIDAE,Philodromus,dispar,Walckenaer, 1826 E S W RI 
+PHILODROMIDAE,Philodromus,aureolus,(Clerck, 1757) E S W NI RI 
+PHILODROMIDAE,Philodromus,praedatus,O. P.-Cambridge, 1871 E S W RI 
+PHILODROMIDAE,Philodromus,cespitum,(Walckenaer, 1802) E S W NI RI 
+PHILODROMIDAE,Philodromus,longipalpis,Simon, 1870 Appendix 2 E NS 
+PHILODROMIDAE,Philodromus,collinus,C. L. Koch, 1835 E 
+PHILODROMIDAE,Philodromus,buxi,Simon, 1884 E 
+PHILODROMIDAE,Philodromus,emarginatus,(Schrank, 1803) E S NI NR V 
+PHILODROMIDAE,Philodromus,albidus,Kulczyñski, 1911 E W RI NS 
+PHILODROMIDAE,Philodromus,margaritatus,(Clerck, 1757) E S NR NT 
+PHILODROMIDAE,Philodromus,rufus,Walckenaer, 1826 E 
+PHILODROMIDAE,Rhysodromus,fallax,(Sundevall, 1833) Philodromus fallax Philodromus fallax E W NR V 
+PHILODROMIDAE,Rhysodromus,histrio,(Latreille, 1819) Philodromus histrio Philodromus histrio E S W NS 
+PHILODROMIDAE,Thanatus,striatus,C. L. Koch, 1845 E W RI 
+PHILODROMIDAE,Thanatus,formicinus,(Clerck, 1757) E NR CE 
+PHILODROMIDAE,Thanatus,vulgaris,Simon, 1870 Not present Not present E S W Ab 
+PHILODROMIDAE,Tibellus,maritimus,(Menge, 1875) E S W NI RI 
+PHILODROMIDAE,Tibellus,oblongus,(Walckenaer, 1802) E S W NI RI 
+THOMISIDAE,Thomisus,onustus,Walckenaer, 1806 E NS 
+THOMISIDAE,Diaea,dorsata,(Fabricius, 1777) E W RI 
+THOMISIDAE,Misumena,vatia,(Clerck, 1757) E W RI 
+THOMISIDAE,Pistius,truncatus,(Pallas, 1772) E NR CE 
+THOMISIDAE,Xysticus,cristatus,(Clerck, 1757) E S W NI RI 
+THOMISIDAE,Xysticus,audax,(Schrank, 1803) E S W RI 
+THOMISIDAE,Xysticus,kochi,Thorell, 1872 E S W 
+THOMISIDAE,Xysticus,erraticus,(Blackwall, 1834) 
+THOMISIDAE,Xysticus,lanio,C. L. Koch, 1835 E W RI 
+THOMISIDAE,Xysticus,ulmi,(Hahn, 1831) E S W RI 
+THOMISIDAE,Xysticus,bifasciatus,C. L. Koch, 1837 E S W NS 
+THOMISIDAE,Xysticus,luctator,L. Koch, 1870 E NR E 
+THOMISIDAE,Xysticus,sabulosus,(Hahn, 1832) E S W NI RI NS 
+THOMISIDAE,Xysticus,luctuosus,(Blackwall, 1836) E S W RI NR E 
+THOMISIDAE,Xysticus,acerbus,Thorell, 1872 E W NR 
+THOMISIDAE,Bassaniodes,robustus,(Hahn, 1832) Xysticus robustus Xysticus robustus E NR E 
+THOMISIDAE,Cozyptila,blackwalli,(Simon, 1875) Ozyptila blackwalli Ozyptila blackwalli E NR E 
+THOMISIDAE,Ozyptila,scabricula,(Westring, 1851) E W NS 
+THOMISIDAE,Ozyptila,claveata,(Walckenaer, 1837) Ozyptila nigrita Ozyptila nigrita E NS 
+THOMISIDAE,Ozyptila,pullata,(Thorell, 1875) Not present E NR V 
+THOMISIDAE,Ozyptila,sanctuaria,(O. P.-Cambridge, 1871) E W RI 
+THOMISIDAE,Ozyptila,praticola,(C. L. Koch, 1837) E W RI 
+THOMISIDAE,Ozyptila,trux,(Blackwall, 1846) E S W NI RI 
+THOMISIDAE,Ozyptila,simplex,(O. P.-Cambridge, 1862) E W 
+THOMISIDAE,Ozyptila,atomaria,(Panzer, 1801) E S W NI RI 
+THOMISIDAE,Ozyptila,brevipes,(Hahn, 1826) E W RI 
+SALTICIDAE,Salticus,scenicus,(Clerck, 1757) E S W NI RI 
+SALTICIDAE,Salticus,cingulatus,(Panzer, 1797) E S W NI RI 
+SALTICIDAE,Salticus,zebraneus,(C. L. Koch, 1837) E NS 
+SALTICIDAE,Heliophanus,cupreus,(Walckenaer, 1802) E S W NI RI 
+SALTICIDAE,Heliophanus,flavipes,(Hahn, 1832) E S W NI RI 
+SALTICIDAE,Heliophanus,auratus,C. L. Koch, 1835 E NR V 
+SALTICIDAE,Heliophanus,dampfi,Schenkel, 1923 Appendix 2 E S W NR V 
+SALTICIDAE,Marpissa,muscosa,(Clerck, 1757) E S W NS 
+SALTICIDAE,Marpissa,radiata,(Grube, 1859) E W NR V 
+SALTICIDAE,Marpissa,nivoyi,(Lucas, 1846) E W RI NS 
+SALTICIDAE,Sibianor,aurocinctus,(Ohlert, 1865) Bianor aurocinctus E S W NS 
+SALTICIDAE,Sibianor,larae,Logunov, 2001 Not present Not present E 
+SALTICIDAE,Ballus,chalybeius,(Walckenaer, 1802) Ballus depressus E W NS 
+SALTICIDAE,Neon,reticulatus,(Blackwall, 1853) E S W NI RI 
+SALTICIDAE,Neon,robustus,Lohmander, 1945 Not present E S W RI NS 
+SALTICIDAE,Neon,valentulus,Falconer, 1912 E NR CE 
+SALTICIDAE,Neon,pictus,Kulczyñski, 1891 Not present E NR NT 
+SALTICIDAE,Euophrys,frontalis,(Walckenaer, 1802) E S W NI RI 
+SALTICIDAE,Euophrys,herbigrada,(Simon, 1871) E NR V 
+SALTICIDAE,Euophrys,petrensis,C. L. Koch, 1837 Talavera petrensis Euophrys petrensis E S NI RI NR NT 
+SALTICIDAE,Pseudeuophrys,erratica,(Walckenaer, 1826) Euophrys erratica E S W NI RI NS 
+SALTICIDAE,Pseudeuophrys,lanigera,(Simon, 1871) Euophrys lanigera E S W RI 
+SALTICIDAE,Pseudeuophrys,obsoleta,(Simon, 1868) Euophrys browningi E NS 
+SALTICIDAE,Talavera,aequipes,(O. P.-Cambridge, 1871) Euophrys aequipes E S W RI 
+SALTICIDAE,Talavera,thorelli,(Kulczyñski, 1891) Appendix 2 as Euophys thorelli E NR V 
+SALTICIDAE,Attulus,pubescens,(Fabricius, 1775) Sitticus pubescens Sitticus pubescens E S W RI 
+SALTICIDAE,Attulus,distinguendus,(Simon, 1968) Sitticus distinguendus Not present E NR CE 
+SALTICIDAE,Attulus,saltator,(O. P.-Cambridge, 1868) Sitticus saltator Attulus saltator E W NS 
+SALTICIDAE,Calositticus,caricis,(Westring, 1861) Sitticus caricis Sitticus caricis E W RI NR 
+SALTICIDAE,Calositticus,floricola,(C. L. Ko

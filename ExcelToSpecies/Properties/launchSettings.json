@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ExcelToSpecies": {
+      "commandName": "Project",
+      "commandLineArgs": "SpiderChecklistLife.xlsx Araneae.json",
+      "workingDirectory": "C:\\Users\\Andrew Douglas\\source\\repos\\SpiderMapSite\\ExcelToSpecies"
+    }
+  }
+}
