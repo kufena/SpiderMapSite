@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrieTree", "TrieTree\TrieTr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{36FB223C-A061-4E7D-8D0B-2DB2DE0DCB7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedTypes", "SharedTypes\SharedTypes.csproj", "{0BDE748C-B015-42FA-A461-CAB74F2A2E51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{36FB223C-A061-4E7D-8D0B-2DB2DE0DCB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36FB223C-A061-4E7D-8D0B-2DB2DE0DCB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36FB223C-A061-4E7D-8D0B-2DB2DE0DCB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDE748C-B015-42FA-A461-CAB74F2A2E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDE748C-B015-42FA-A461-CAB74F2A2E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDE748C-B015-42FA-A461-CAB74F2A2E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDE748C-B015-42FA-A461-CAB74F2A2E51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

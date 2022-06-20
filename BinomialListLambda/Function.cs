@@ -6,6 +6,7 @@ using System.Transactions;
 using Amazon.S3;
 using Amazon.S3.Model;
 using Microsoft.VisualBasic.CompilerServices;
+using SharedTypes;
 using TrieTree;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
@@ -108,20 +109,6 @@ public class Functions
         }
 
     }
-}
-
-record Species
-{
-    public Species(string GenusName, string SpeciesName, string Comment)
-    {
-        this.GenusName = GenusName;
-        this.SpeciesName = SpeciesName;
-        this.Comment = Comment;
-    }
-
-    public string GenusName { init; get; }
-    public string SpeciesName { init; get; }
-    public string Comment { init; get; }
 }
 
 record BodyResponse

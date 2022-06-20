@@ -5,6 +5,7 @@ using System.Text;
 using ExcelDataReader;
 using ExcelDataReader.Core;
 using System.Text.Json;
+using SharedTypes;
 
 Console.WriteLine($"Reading in from {args[0]}!");
 
@@ -76,20 +77,6 @@ using (var stream = File.Open(args[0], FileMode.Open, FileAccess.Read))
             */
         }
     }
-}
-
-record Species
-{
-    public Species(string g, string s, string c)
-    {
-        GenusName = g;
-        SpeciesName = s;
-        Comment = c;
-    }
-
-    public string GenusName { init; get; }
-    public string SpeciesName { init; get; }
-    public string Comment { init; get; }
 }
 
 record Family
