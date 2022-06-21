@@ -16,31 +16,114 @@
           "AWSLambdaBasicExecutionRole"
         ],
         "Events": {
-          "RootGet": {
+          "GuidGet": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/{guid}",
+              "Method": "GET"
+            }
+          }
+        }
+      }
+    },
+    "AreaGet": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "SpeciesRecordLambda::SpeciesRecordLambda.Functions::AreaGet",
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "MemorySize": 256,
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [
+          "AWSLambdaBasicExecutionRole"
+        ],
+        "Events": {
+          "AreaGet": {
             "Type": "Api",
             "Properties": {
               "Path": "/",
-              "Method": "GET"
+              "Method": "GET",
+              "RequestParameters": [
+                 {
+                   "method.request.querystring.latlonl": {
+                     "Required": "true"
+                   }
+                 },
+                 {
+                   "method.request.querystring.latlonr": {
+                     "Required": "true"
+                   }
+                 }
+              ]
             }
-          },
+          }
+        }
+      }
+    },
+    "Put": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "SpeciesRecordLambda::SpeciesRecordLambda.Functions::Put",
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "MemorySize": 256,
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [
+          "AWSLambdaBasicExecutionRole"
+        ],
+        "Events": {
           "RootPut": {
             "Type": "Api",
             "Properties": {
-              "Path": "/",
+              "Path": "/{guid}",
               "Method": "PUT"
             }
-          },
-           "RootDelete": {
+          }
+        }
+      }
+    },
+    "Delete": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "SpeciesRecordLambda::SpeciesRecordLambda.Functions::Delete",
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "MemorySize": 256,
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [
+          "AWSLambdaBasicExecutionRole"
+        ],
+        "Events": {
+          "RootDelete": {
             "Type": "Api",
             "Properties": {
-              "Path": "/",
+              "Path": "/{guid}",
               "Method": "DELETE"
             }
-          },
-           "RootPost": {
+          }
+        }
+      }
+    },
+    "Post": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "SpeciesRecordLambda::SpeciesRecordLambda.Functions::Post",
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "MemorySize": 256,
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [
+          "AWSLambdaBasicExecutionRole"
+        ],
+        "Events": {
+          "RootPost": {
             "Type": "Api",
             "Properties": {
-              "Path": "/",
+              "Path": "/{guid}",
               "Method": "POST"
             }
           }

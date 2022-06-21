@@ -36,18 +36,57 @@ public class Functions
         return response;
     }
 
+    public APIGatewayProxyResponse AreaGet(APIGatewayProxyRequest request, ILambdaContext context)
+    {
+        context.Logger.LogInformation("PathGet Request\n");
+        context.Logger.LogInformation($"Extent: {request.QueryStringParameters["latlonl"]} to {request.QueryStringParameters["latlonr"]}");
+
+        var response = new APIGatewayProxyResponse
+        {
+            StatusCode = (int)HttpStatusCode.OK,
+            Body = "Hello AWS Serverless",
+            Headers = new Dictionary<string, string> { { "Content-Type", "text/plain" } }
+        };
+
+        return response;
+    }
+
     public APIGatewayProxyResponse Put(APIGatewayProxyRequest request, ILambdaContext context)
     {
+        context.Logger.LogInformation("Put Request\n");
 
+        var response = new APIGatewayProxyResponse
+        {
+            StatusCode = (int)HttpStatusCode.OK,
+            Headers = new Dictionary<string, string> { { "Content-Type", "text/plain" } }
+        };
+
+        return response;
     }
 
     public APIGatewayProxyResponse Delete(APIGatewayProxyRequest request, ILambdaContext context)
     {
+        context.Logger.LogInformation("Delete Request\n");
 
+        var response = new APIGatewayProxyResponse
+        {
+            StatusCode = (int)HttpStatusCode.OK,
+            Headers = new Dictionary<string, string> { { "Content-Type", "text/plain" } }
+        };
+
+        return response;
     }
 
     public APIGatewayProxyResponse Post(APIGatewayProxyRequest request, ILambdaContext context)
     {
+        context.Logger.LogInformation("Post Request\n");
 
+        var response = new APIGatewayProxyResponse
+        {
+            StatusCode = (int)HttpStatusCode.OK,
+            Headers = new Dictionary<string, string> { { "Content-Type", "text/plain" } }
+        };
+
+        return response;
     }
 }
