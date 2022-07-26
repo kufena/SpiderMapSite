@@ -1,0 +1,65 @@
+﻿AWSTemplateFormatVersion: "2010-09-09"
+Description: Database Dynamo DB for Species Records, and DB Stream Set Up
+Resources:
+  SpiderMapsDynamo:
+    Type: "AWS::DyanmoDB::Table"
+    Resources:
+      TableName: "SpiderMapsDynamo"
+      AttributeDefinitions:
+        -
+          AttributeName: "Guid"
+          AttributeType: "S"
+        -
+          AttributeName: "User"
+          AttributeType: "S"
+        -
+          AttributeName: "Genus"
+          AttributeType: "S"
+        -
+          AttributeName: "Species"
+          AttributeType: "S"
+        -
+          AttributeName: "latitude"
+          AttributeType: "N"
+        -
+          AttributeName: "longitude"
+          AttributeType: "N"
+        -
+          AttributeName: "GridRefSixFigures"
+          AttributeType: "S"
+        -
+          AttributeName: "GridRefFourFigures"
+          AttributeType: "S"
+        -
+          AttributeName: "Date Added"
+          AttributeType: "S"
+        -
+          AttributeName: "Date Recorded"
+          AttributeType: "S"
+      KeySchema:
+        -
+          AttributeName: "Guid"
+          KeyType: "HASH"
+        -
+          AttributeName: "User"
+          KeyType: "RANGE"
+      StreamSpecification:
+        StreamViewType: "NEW_IMAGE"
+Outputs:
+  DyanmoDBName:
+    Description: "Name of the database"
+    Value: !Ref SpiderMapsDynamo
+    Export:
+      Name: !Join [ ":", [ !Ref "AWS::StackName", "DynamoDBName" ] ]
+
+  DynamoDBArn:
+    Description: "Arn of the database"
+    Value: !GetAtt SpiderMapsDynamo.Arn
+    Export:
+      Name: !Join [ ":", [ !Ref "AWS::StackName", "DynamoDBArn" ] ]
+
+  DynamoDBStreamArn:
+    Description: "Arn of the stream"
+    Value: !GetAtt SpiderMapsDyname.StreamArn
+    Export:
+      Name: !Join [ ":", [ !Ref "AWS::StackName", "DynamoStreamArn" ] ]

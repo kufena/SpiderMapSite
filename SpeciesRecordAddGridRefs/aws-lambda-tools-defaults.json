@@ -8,7 +8,8 @@
   "profile": "default",
   "region": "eu-west-2",
   "configuration": "Release",
-  "s3-prefix": "SpeciesRecordLambda/",
-  "template": "serverless.template",
-  "template-parameters": ""
+  "function-runtime": "dotnet6",
+  "function-memory-size": 256,
+  "function-timeout": 30,
+  "function-handler": "SpeciesRecordAddGridRefs::SpeciesRecordAddGridRefs.Function::FunctionHandler"
 }

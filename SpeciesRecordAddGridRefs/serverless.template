@@ -1,0 +1,16 @@
+Transform: AWS::Serverless-2016-10-31,
+Description: "An AWS Serverless Application."
+Resources:
+  AddGridRefFunction:
+    Type: AWS::Serverless::Function
+	Properties:
+	  Runtime: dotnet6
+	  Role:
+	  Events:
+	    DBEvent:
+  		  Type: DynamoDB
+		  Properties:
+		    Stream: 
+			BatchSize: 1
+			Enabled: true
+			StartingPosition: TRIM_HORIZON

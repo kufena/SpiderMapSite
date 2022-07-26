@@ -1,4 +1,4 @@
 ﻿namespace SharedTypes;
 
 
-public record SpeciesRecord(DateOnly RecordSeenDate, DateTime RecordAddedTime, Species Type, Recorder Recorder, LatLong Position);
+public record SpeciesRecord(DateTime RecordSeenDate, DateTime RecordAddedTime, Species Type, Recorder Recorder, LatLong Position);

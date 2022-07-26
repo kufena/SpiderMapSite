@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelToSpecies", "ExcelToSp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrieTree", "TrieTree\TrieTree.csproj", "{5EF15F26-17E7-4F7F-8A39-E77248CAEE93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{36FB223C-A061-4E7D-8D0B-2DB2DE0DCB7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{36FB223C-A061-4E7D-8D0B-2DB2DE0DCB7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedTypes", "SharedTypes\SharedTypes.csproj", "{0BDE748C-B015-42FA-A461-CAB74F2A2E51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedTypes", "SharedTypes\SharedTypes.csproj", "{0BDE748C-B015-42FA-A461-CAB74F2A2E51}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeciesRecordLambda", "SpeciesRecordLambda\SpeciesRecordLambda.csproj", "{D90923CD-17DA-45D4-9E84-D2CADAFAA3D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeciesRecordAddGridRefs", "SpeciesRecordAddGridRefs\SpeciesRecordAddGridRefs.csproj", "{44719AF9-BFD3-48FA-AF16-ECCF8F5C048C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{D90923CD-17DA-45D4-9E84-D2CADAFAA3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D90923CD-17DA-45D4-9E84-D2CADAFAA3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D90923CD-17DA-45D4-9E84-D2CADAFAA3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44719AF9-BFD3-48FA-AF16-ECCF8F5C048C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44719AF9-BFD3-48FA-AF16-ECCF8F5C048C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44719AF9-BFD3-48FA-AF16-ECCF8F5C048C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44719AF9-BFD3-48FA-AF16-ECCF8F5C048C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

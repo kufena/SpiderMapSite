@@ -3,6 +3,56 @@
   "Transform": "AWS::Serverless-2016-10-31",
   "Description": "An AWS Serverless Application.",
   "Resources": {
+    "SpiderMapsDynamoAccessRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "RoleName": "SpiderMapsDynamoAccessRole",
+        "Policies": [
+            {
+                "PolicyName": "SpiderMapDynamoDBAllowAccess",
+                "PolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                                {
+                                    "Effect": "Allow",
+                                    "Action": "*",
+                                    "Resource": "arn:aws:dynamodb:eu-west-2:780487234683:table/SpiderMapsDynamo"
+                                },
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
+                                        "logs:CreateLogGroup",
+                                        "logs:CreateLogStream",
+                                        "logs:PutLogEvents",
+                                        "dynamodb:GetRecords",
+                                        "dynamodb:GetShardIterator",
+                                        "dynamodb:DescribeStream",
+                                        "dynamodb:ListStreams"
+                                    ],
+                                    "Resource": "*"
+                                }
+                            ]
+                        }
+                    }
+        ],
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+                        {
+                            "Effect": "Allow",
+                            "Principal": {
+                                "Service": [
+                                    "lambda.amazonaws.com"
+                                ]
+                            },
+                            "Action": [
+                                "sts:AssumeRole"
+                            ]
+                        }
+                      ]
+        }
+      }
+    },
     "Get": {
       "Type": "AWS::Serverless::Function",
       "Properties": {
@@ -11,10 +61,7 @@
         "CodeUri": "",
         "MemorySize": 256,
         "Timeout": 30,
-        "Role": null,
-        "Policies": [
-          "AWSLambdaBasicExecutionRole"
-        ],
+        "Role": { "Fn::GetAtt": ["SpiderMapsDynamoAccessRole", "Arn"] },
         "Events": {
           "GuidGet": {
             "Type": "Api",
@@ -34,10 +81,7 @@
         "CodeUri": "",
         "MemorySize": 256,
         "Timeout": 30,
-        "Role": null,
-        "Policies": [
-          "AWSLambdaBasicExecutionRole"
-        ],
+        "Role": { "Fn::GetAtt": ["SpiderMapsDynamoAccessRole", "Arn"] },
         "Events": {
           "AreaGet": {
             "Type": "Api",
@@ -69,10 +113,7 @@
         "CodeUri": "",
         "MemorySize": 256,
         "Timeout": 30,
-        "Role": null,
-        "Policies": [
-          "AWSLambdaBasicExecutionRole"
-        ],
+        "Role": { "Fn::GetAtt": ["SpiderMapsDynamoAccessRole", "Arn"] },
         "Events": {
           "RootPut": {
             "Type": "Api",
@@ -92,10 +133,7 @@
         "CodeUri": "",
         "MemorySize": 256,
         "Timeout": 30,
-        "Role": null,
-        "Policies": [
-          "AWSLambdaBasicExecutionRole"
-        ],
+        "Role": { "Fn::GetAtt": ["SpiderMapsDynamoAccessRole", "Arn"] },
         "Events": {
           "RootDelete": {
             "Type": "Api",
@@ -115,15 +153,12 @@
         "CodeUri": "",
         "MemorySize": 256,
         "Timeout": 30,
-        "Role": null,
-        "Policies": [
-          "AWSLambdaBasicExecutionRole"
-        ],
+        "Role": { "Fn::GetAtt": ["SpiderMapsDynamoAccessRole", "Arn"] },
         "Events": {
           "RootPost": {
             "Type": "Api",
             "Properties": {
-              "Path": "/{guid}",
+              "Path": "/",
               "Method": "POST"
             }
           }
