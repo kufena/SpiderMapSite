@@ -1,9 +1,10 @@
-﻿AWSTemplateFormatVersion: "2010-09-09"
-Description: Database Dynamo DB for Species Records, and DB Stream Set Up
-Resources:
-  SpiderMapsDynamo:
-    Type: "AWS::DyanmoDB::Table"
-    Resources:
+﻿
+Description: 
+  "Dynamo DB table for spider records and a stream for processing them later"
+Resources :
+  SpiderMapsDynamo :
+    Type: "AWS::DynamoDB::Table"
+    Properties:
       TableName: "SpiderMapsDynamo"
       AttributeDefinitions:
         -
@@ -12,30 +13,6 @@ Resources:
         -
           AttributeName: "User"
           AttributeType: "S"
-        -
-          AttributeName: "Genus"
-          AttributeType: "S"
-        -
-          AttributeName: "Species"
-          AttributeType: "S"
-        -
-          AttributeName: "latitude"
-          AttributeType: "N"
-        -
-          AttributeName: "longitude"
-          AttributeType: "N"
-        -
-          AttributeName: "GridRefSixFigures"
-          AttributeType: "S"
-        -
-          AttributeName: "GridRefFourFigures"
-          AttributeType: "S"
-        -
-          AttributeName: "Date Added"
-          AttributeType: "S"
-        -
-          AttributeName: "Date Recorded"
-          AttributeType: "S"
       KeySchema:
         -
           AttributeName: "Guid"
@@ -43,6 +20,9 @@ Resources:
         -
           AttributeName: "User"
           KeyType: "RANGE"
+      ProvisionedThroughput:
+        ReadCapacityUnits : 5
+		WriteCapacityUnits : 5
       StreamSpecification:
         StreamViewType: "NEW_IMAGE"
 Outputs:

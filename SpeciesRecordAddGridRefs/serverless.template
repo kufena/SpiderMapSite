@@ -1,16 +1,83 @@
-Transform: AWS::Serverless-2016-10-31,
-Description: "An AWS Serverless Application."
-Resources:
-  AddGridRefFunction:
-    Type: AWS::Serverless::Function
-	Properties:
-	  Runtime: dotnet6
-	  Role:
-	  Events:
-	    DBEvent:
-  		  Type: DynamoDB
-		  Properties:
-		    Stream: 
-			BatchSize: 1
-			Enabled: true
-			StartingPosition: TRIM_HORIZON
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Transform": "AWS::Serverless-2016-10-31",
+  "Description": "An AWS Serverless Application.",
+  "Parameters": {
+    "SpiderMapsDynamo": {
+      "Type": "String",
+      "Description" : "Name of stack where the Dynamo DB is declared along with its stream"
+    }
+  },
+  "Resources": {
+  
+    "SpiderMapsDynamoStreamRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "RoleName": "SpiderMapsDynamoStreamRole",
+        "Policies": [
+            {
+                "PolicyName": "SpiderMapsDynamoStreamAccess",
+                "PolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                                {
+                                    "Effect": "Allow",
+                                    "Action": "*",
+                                    "Resource": {"Fn::ImportValue": {"Fn::Sub": "${SpiderMapsDynamo}:DynamoDBArn"}}
+                                },
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
+                                        "logs:CreateLogGroup",
+                                        "logs:CreateLogStream",
+                                        "logs:PutLogEvents",
+                                        "dynamodb:GetRecords",
+                                        "dynamodb:GetShardIterator",
+                                        "dynamodb:DescribeStream",
+                                        "dynamodb:ListStreams"
+                                    ],
+                                    "Resource": "*"
+                                }
+                            ]
+                        }
+                    }
+        ],
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+                        {
+                            "Effect": "Allow",
+                            "Principal": {
+                                "Service": [
+                                    "lambda.amazonaws.com"
+                                ]
+                            },
+                            "Action": [
+                                "sts:AssumeRole"
+                            ]
+                        }
+                      ]
+        }
+      }
+    },
+    "AddGridRefFunction": {
+	  "Type": "AWS::Serverless::Function",
+	  "Properties": {
+	    "Runtime": "dotnet6",
+        "Handler" : "SpeciesRecordAddGridRefs::SpeciesRecordAddGridRefs.Function::FunctionHandler",
+		"Role": { "Fn::GetAtt": ["SpiderMapsDynamoStreamRole","Arn"]},
+		"Events": {
+		"DBEvent": {
+  		  "Type": "DynamoDB",
+		  "Properties": {
+		    "Stream": {"Fn::ImportValue": {"Fn::Sub": "${SpiderMapsDynamo}:DynamoStreamArn"}},
+			"BatchSize": 1,
+			"Enabled": true,
+			"StartingPosition": "TRIM_HORIZON"
+			}
+			}
+		}
+	  }
+	}
+  }
+}
