@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "SpiderListProcessing": {
-      "commandName": "Project",
-      "commandLineArgs": "\".\\A-Z Species Index.html\" out.txt",
-      "workingDirectory": "C:\\Users\\Andrew Douglas\\source\\repos\\SpiderMapSite\\SpiderListProcessing"
-    }
-  }
-}
