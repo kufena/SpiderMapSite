@@ -1,0 +1,14 @@
+{
+	"AWSTemplateFormatVersion" : "2010-09-09",
+
+	"Description" : "Database for grid refs to spider records",
+
+	"Parameters" : {
+	},
+
+	"Resources" : {
+	},
+
+	"Outputs" : {
+	}
+}

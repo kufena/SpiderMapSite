@@ -1,0 +1,35 @@
+{
+	"AWSTemplateFormatVersion" : "2010-09-09",
+	"Transform": "AWS::Serverless-2016-10-31",
+
+	"Description" : "",
+
+	"Parameters" : {
+	  "SQSQueueStack": {
+        "Type": "String",
+        "Description" : "Name of stack where the Dynamo DB is declared along with its stream"
+      }
+	},
+
+	"Resources" : {
+	  "GridRefsSQSLambda": {
+	    "Type": "AWS::Serverless::Function",
+		"Properties": {
+		  "Runtime" : "dotnet6",
+		  "FunctionName" : "GridRefsSQSLambda",
+		  "Handler": "SpeciesRecordAddGridRefs::SpeciesRecordAddGridRefs.GridRefQueueLambda::FunctionHandler",
+		  "Events" : {
+			"SpiderRecordEvents" : {
+			  "Type" : "SQS",
+			  "Properties" : {
+			     "Queue" : {"Fn::ImportValue": {"Fn::Sub": "${SQSQueueStack}:StackArn"}}
+			  }
+			}
+		  }
+		}
+	  }
+	},
+
+	"Outputs" : {
+	}
+}

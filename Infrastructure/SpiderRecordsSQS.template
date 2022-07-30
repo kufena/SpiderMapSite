@@ -1,0 +1,32 @@
+{
+	"AWSTemplateFormatVersion" : "2010-09-09",
+
+	"Description" : "SQS for spider records API to signal the requirement to create grid references.",
+
+	"Parameters" : {
+	},
+
+	"Resources" : {
+	  "SpiderRecordsSQS": {
+	    "Type": "AWS::SQS::Queue",
+		"Properties": {
+		  "QueueName" : "SpiderRecordsSQS"
+		}
+	  }
+	},
+
+	"Outputs" : {
+	  "QueueURL": {
+	    "Value": {"Ref": "SpiderRecordsSQS"},
+		"Export": {"Fn::Join": [":", [{"Ref": "AWS::StackName"}, "QueueURL"]]}
+	  },
+	  "QueueArn": {
+	    "Value": {"Fn::GetAtt": ["SpiderRecordsSQS","Arn"]},
+		"Export": {"Fn::Join": [":", [{"Ref": "AWS::StackName"}, "QueueArn"]]}
+	  },
+	  "QueueName": {
+		"Value": {"Fn::GetAtt": ["SpiderRecordsSQS","QueueName"]},
+		"Export": {"Fn::Join": [":", [{"Ref": "AWS::StackName"}, "QueueName"]]}
+	  }
+	}
+}

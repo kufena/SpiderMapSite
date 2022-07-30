@@ -66,6 +66,26 @@
     "SpiderRecordsAPI": {
       "Type": "AWS::Serverless::Api",
       "Properties" : {
+       "Name" : "SpiderRecordsAPI",
+       "StageName": {"Fn::Sub": "${SpiderMapsStage}"},
+       "MethodSettings" : [
+         {
+            "ResourcePath": "/~1{guid}",
+            "HttpMethod": "GET"
+         },
+         {
+            "ResourcePath": "/~1{guid}",
+            "HttpMethod": "PUT"
+         },
+         {
+            "ResourcePath": "/~1{guid}",
+            "HttpMethod": "DELETE"
+         },
+         {
+            "ResourcePath": "/~1",
+            "HttpMethod": "POST"
+         }
+       ]
       }
     },
     "Get": {
@@ -82,7 +102,8 @@
             "Type": "Api",
             "Properties": {
               "Path": "/{guid}",
-              "Method": "GET"
+              "Method": "GET",
+              "RestApiId" : {"Ref": "SpiderRecordsAPI"}
             }
           }
         }
@@ -102,7 +123,8 @@
             "Type": "Api",
             "Properties": {
               "Path": "/{guid}",
-              "Method": "PUT"
+              "Method": "PUT",
+              "RestApiId" : {"Ref": "SpiderRecordsAPI"}
             }
           }
         }
@@ -122,7 +144,8 @@
             "Type": "Api",
             "Properties": {
               "Path": "/{guid}",
-              "Method": "DELETE"
+              "Method": "DELETE",
+              "RestApiId" : {"Ref": "SpiderRecordsAPI"}
             }
           }
         }
@@ -142,7 +165,8 @@
             "Type": "Api",
             "Properties": {
               "Path": "/",
-              "Method": "POST"
+              "Method": "POST",
+              "RestApiId" : {"Ref": "SpiderRecordsAPI"}
             }
           }
         }
