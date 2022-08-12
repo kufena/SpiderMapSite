@@ -1,41 +1,16 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <SchemaVersion>2.0</SchemaVersion>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
     <ProjectGuid>{99999999-9999-9999-9999-999999999999}</ProjectGuid>
-    <AssemblyName>Infrastructure</AssemblyName>
-    <Name>Infrastructure</Name>
-    <RootNamespace>Infrastructure</RootNamespace>
-  </PropertyGroup>
-  <PropertyGroup>
-    <!-- Experimental LocalAppData -->
-    <CloudFormationPath Condition=" '$(CloudFormationPath)' == '' AND Exists('$(LocalAppData)\Microsoft\VisualStudio\10.0Exp\Extensions\Amazon Web Services\AWSToolkit.VS2010.Core\0.5.0.0\cloudformation.targets')">$(LocalAppData)\Microsoft\VisualStudio\10.0Exp\Extensions\Amazon Web Services\AWSToolkit.VS2010.Core\0.5.0.0</CloudFormationPath>
-    <!-- Integrated Shell -->
-    <CloudFormationPath Condition=" '$(CloudFormationPath)' == '' AND Exists('$(MSBuildExtensionsPath)\Amazon Web Services LLC\AWSToolkit.VS2010\cloudformation.targets')">$(MSBuildExtensionsPath)\Amazon Web Services LLC\AWSToolkit.VS2010</CloudFormationPath>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="GridRefsAPI.template">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="GridRefsQueueLambda.template">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="RecordGridRefDatabase.template">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SpiderRecordsAPI.template">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SpiderRecordsDatabase.template">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SpiderRecordsSQS.template">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-  </PropertyGroup>
-  <Import Project="$(CloudFormationPath)\cloudformation.targets" />
+  <ItemGroup>
+  </ItemGroup>
 </Project>

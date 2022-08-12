@@ -8,7 +8,7 @@
   "profile": "default",
   "region": "eu-west-2",
   "configuration": "Release",
-  "function-runtime": "dotnet6",
+  "function-runtime": "dotnet5",
   "function-memory-size": 256,
   "function-timeout": 30,
   "function-handler": "SpeciesRecordAddGridRefs::SpeciesRecordAddGridRefs.Function::FunctionHandler"

@@ -8,21 +8,58 @@
 	  "SQSQueueStack": {
         "Type": "String",
         "Description" : "Name of stack where the Dynamo DB is declared along with its stream"
-      }
+      },
+	  "DBStack": {
+	    "Type": "String",
+		"Description": "Name of stack declaring the db table."
+	  }
 	},
 
 	"Resources" : {
+	  "GridRefsLambdaRole": {
+	    "Type": "AWS::IAM::Role",
+		"Properties": {
+		"ManagedPolicyArns" : [
+		  {"Fn::ImportValue": {"Fn::Join": [":", [{"Ref": "SQSQueueStack"},"QueueManagedPolicy"]]}},
+		  {"Fn::ImportValue": {"Fn::Join": [":", [{"Ref": "DBStack"},"SpiderGridRefDynamoAccessPolicy"]]}}
+		],
+        "AssumeRolePolicyDocument" : {
+          "Version": "2012-10-17",
+          "Statement": [
+                        {
+                            "Effect": "Allow",
+                            "Principal": {
+                                "Service": [
+                                    "lambda.amazonaws.com"
+                                ]
+                            },
+                            "Action": [
+                                "sts:AssumeRole"
+                            ]
+                        }
+                      ]
+        }
+		}
+	  },
 	  "GridRefsSQSLambda": {
 	    "Type": "AWS::Serverless::Function",
 		"Properties": {
 		  "Runtime" : "dotnet6",
 		  "FunctionName" : "GridRefsSQSLambda",
+		  "CodeUri" : "",
+		  "Environment" : { 
+		    "Variables": {
+		       "TableName": {"Fn::ImportValue": {"Fn::Join": [":", [{"Ref": "DBStack"},"DynamoDBName"]]}}, 
+               "SQSURL": {"Fn::ImportValue": {"Fn::Join": [":", [{"Ref": "SQSQueueStack"},"QueueURL"]]}}
+		    }
+		  },
+		  "Role": {"Fn::GetAtt": ["GridRefsLambdaRole","Arn"]},
 		  "Handler": "SpeciesRecordAddGridRefs::SpeciesRecordAddGridRefs.GridRefQueueLambda::FunctionHandler",
 		  "Events" : {
 			"SpiderRecordEvents" : {
 			  "Type" : "SQS",
 			  "Properties" : {
-			     "Queue" : {"Fn::ImportValue": {"Fn::Sub": "${SQSQueueStack}:StackArn"}}
+			     "Queue" : {"Fn::ImportValue": {"Fn::Sub": "${SQSQueueStack}:QueueArn"}}
 			  }
 			}
 		  }

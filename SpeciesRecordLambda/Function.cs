@@ -3,6 +3,12 @@ using Amazon.Lambda.Core;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.Model;
+using Amazon.Lambda.SQSEvents;
+using Amazon.SimpleSystemsManagement;
+using Amazon.SimpleSystemsManagement.Model;
+using Amazon.SQS;
+using Amazon.SQS.Model;
+
 using System.Text.Json;
 using SharedTypes;
 
@@ -14,8 +20,11 @@ namespace SpeciesRecordLambda;
 public class Functions
 {
     private AmazonDynamoDBClient dbClient;
+    private AmazonSimpleSystemsManagementClient ssmClient;
+    private AmazonSQSClient amazonSQSClient;
+
     private string TableName = "SpiderMapsDynamo";
-    private string IndexName = "latitude-longitude-index";
+    private string QueueURL;
 
     /// <summary>
     /// Default constructor that Lambda will invoke.
@@ -23,6 +32,15 @@ public class Functions
     public Functions()
     {
         dbClient = new AmazonDynamoDBClient();
+        ssmClient = new AmazonSimpleSystemsManagementClient();
+        amazonSQSClient = new AmazonSQSClient();
+
+        var stageName = Environment.GetEnvironmentVariable("Stage");
+        var queue = Environment.GetEnvironmentVariable("SQSURL");
+        if (queue == null) throw new Exception("Can't find SQSURL Environment value");
+        QueueURL = queue;
+
+        Console.WriteLine($"{stageName} - {queue}");
     }
 
 
@@ -100,21 +118,52 @@ public class Functions
         toSave.Add("Species", new AttributeValue(record.Type.SpeciesName));
         toSave.Add("Date Added", new AttributeValue(record.RecordAddedTime.ToString("yyyy-MM-ddTHH:MM:ss"))); 
         toSave.Add("Date Recorded", new AttributeValue(record.RecordSeenDate.ToString("yyyy-MM-ddTHH:MM:ss")));
-        toSave.Add("GridRefSixFigures", new AttributeValue(""));
-        toSave.Add("GridRefFourFigures",new AttributeValue(""));
 
         var ct = new CancellationToken();
 
         var dbResponse = await dbClient.PutItemAsync(new PutItemRequest(TableName,toSave), ct);
-
-        var response = new APIGatewayProxyResponse
+        if (dbResponse.HttpStatusCode == HttpStatusCode.OK)
         {
-            StatusCode = (int)HttpStatusCode.Created,
+            Dictionary<string, SpeciesRecord> vals = new Dictionary<string, SpeciesRecord>();
+            vals.Add(guid.ToString(), record);
+            var sqsMsgBody = JsonSerializer.Serialize(vals);
+            context.Logger.LogInformation($"SQS Message is {sqsMsgBody}");
+            SendMessageRequest smr = new SendMessageRequest(QueueURL, sqsMsgBody);
+            var sqsresponse = await amazonSQSClient.SendMessageAsync(smr);
+
+            if (sqsresponse.HttpStatusCode == HttpStatusCode.OK)
+            {
+                var okresponse = new APIGatewayProxyResponse
+                {
+                    StatusCode = (int)HttpStatusCode.Created,
+                    Headers = new Dictionary<string, string> { { "Content-Type", "application/json" } },
+                    Body = $"{{ \"guid\"=\"{guid.ToString()}\" }}"
+                };
+
+                return okresponse;
+            }
+            else
+            {
+                context.Logger.LogError("Error adding request to SQS Queue.");
+                context.Logger.LogError($"{sqsresponse.HttpStatusCode}");
+                context.Logger.LogError(sqsresponse.ToString());
+            }
+        }
+        else {
+            context.Logger.LogError("Error writing to the dababase.");
+            context.Logger.LogError($"{dbResponse.HttpStatusCode}");
+            context.Logger.LogError(dbResponse.ToString());
+        }
+
+        var errresponse = new APIGatewayProxyResponse
+        {
+            StatusCode = (int)HttpStatusCode.BadRequest,
             Headers = new Dictionary<string, string> { { "Content-Type", "application/json" } },
-            Body = $"{{ \"guid\"=\"{guid.ToString()}\" }}"
+            Body = $"{{}}"
         };
 
-        return response;
+        return errresponse;
+
     }
 
     public APIGatewayProxyResponse Delete(APIGatewayProxyRequest request, ILambdaContext context)

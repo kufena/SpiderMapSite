@@ -12,21 +12,41 @@
 		"Properties": {
 		  "QueueName" : "SpiderRecordsSQS"
 		}
+	  },
+	  "SpiderRecordsSQSPolicy": {
+	    "Type": "AWS::IAM::ManagedPolicy",
+		"Properties": {
+		  "ManagedPolicyName": "SpiderRecordsSQSPolicy",
+		  "PolicyDocument": {
+		          "Version": "2012-10-17",
+                  "Statement": [
+                                {
+                                    "Effect": "Allow",
+                                    "Action": "*",
+                                    "Resource": {"Fn::GetAtt": ["SpiderRecordsSQS","Arn"]}
+                                }
+                            ]
+		  }
+		}
 	  }
 	},
 
 	"Outputs" : {
 	  "QueueURL": {
 	    "Value": {"Ref": "SpiderRecordsSQS"},
-		"Export": {"Fn::Join": [":", [{"Ref": "AWS::StackName"}, "QueueURL"]]}
+		"Export": { "Name": {"Fn::Join": [":", [{"Ref": "AWS::StackName"}, "QueueURL"]]}}
 	  },
 	  "QueueArn": {
 	    "Value": {"Fn::GetAtt": ["SpiderRecordsSQS","Arn"]},
-		"Export": {"Fn::Join": [":", [{"Ref": "AWS::StackName"}, "QueueArn"]]}
+		"Export": { "Name": {"Fn::Join": [":", [{"Ref": "AWS::StackName"}, "QueueArn"]]}}
 	  },
 	  "QueueName": {
 		"Value": {"Fn::GetAtt": ["SpiderRecordsSQS","QueueName"]},
-		"Export": {"Fn::Join": [":", [{"Ref": "AWS::StackName"}, "QueueName"]]}
+		"Export": { "Name": {"Fn::Join": [":", [{"Ref": "AWS::StackName"}, "QueueName"]]}}
+	  },
+	  "QueueManagedPolicy": {
+	    "Value": {"Ref": "SpiderRecordsSQSPolicy"},
+		"Export": { "Name": {"Fn::Join": [":", [{"Ref": "AWS::StackName"}, "QueueManagedPolicy"]]}}
 	  }
 	}
 }

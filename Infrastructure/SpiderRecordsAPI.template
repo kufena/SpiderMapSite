@@ -7,6 +7,10 @@
       "Type": "String",
       "Description" : "Name of stack where the Dynamo DB is declared along with its stream"
     },
+    "SpiderMapsSQS": {
+      "Type": "String",
+      "Description": "Name of stack where the SQS queue is built."
+    },
     "SpiderMapsStage": {
       "Type": "String",
       "Description": "Name of the stage for our API"
@@ -17,35 +21,11 @@
       "Type": "AWS::IAM::Role",
       "Properties": {
         "RoleName": "SpiderMapsDynamoAccessRole",
-        "Policies": [
-            {
-                "PolicyName": "SpiderMapDynamoDBAllowAccess",
-                "PolicyDocument": {
-                "Version": "2012-10-17",
-                "Statement": [
-                                {
-                                    "Effect": "Allow",
-                                    "Action": "*",
-                                    "Resource": {"Fn::ImportValue": {"Fn::Sub": "${SpiderMapsDynamo}:DynamoDBArn"}}
-                                },
-                                {
-                                    "Effect": "Allow",
-                                    "Action": [
-                                        "logs:CreateLogGroup",
-                                        "logs:CreateLogStream",
-                                        "logs:PutLogEvents",
-                                        "dynamodb:GetRecords",
-                                        "dynamodb:GetShardIterator",
-                                        "dynamodb:DescribeStream",
-                                        "dynamodb:ListStreams"
-                                    ],
-                                    "Resource": "*"
-                                }
-                            ]
-                        }
-                    }
+        "ManagedPolicyArns" : [
+          {"Fn::ImportValue": {"Fn::Join": [":",[{"Ref": "SpiderMapsSQS"},"QueueManagedPolicy"]]}},
+          {"Fn::ImportValue": {"Fn::Join": [":", [{"Ref": "SpiderMapsDynamo"},"DynamoAccessPolicy"]]}}
         ],
-        "AssumeRolePolicyDocument": {
+        "AssumeRolePolicyDocument" : {
           "Version": "2012-10-17",
           "Statement": [
                         {
@@ -97,6 +77,7 @@
         "MemorySize": 256,
         "Timeout": 30,
         "Role": { "Fn::GetAtt": ["SpiderMapsDynamoAccessRole", "Arn"] },
+        "Environment" : { "Variables": {"Stage": {"Ref": "SpiderMapsStage"}}},
         "Events": {
           "GuidGet": {
             "Type": "Api",
@@ -118,6 +99,7 @@
         "MemorySize": 256,
         "Timeout": 30,
         "Role": { "Fn::GetAtt": ["SpiderMapsDynamoAccessRole", "Arn"] },
+        "Environment" : { "Variables": {"Stage": {"Ref": "SpiderMapsStage"}}},
         "Events": {
           "RootPut": {
             "Type": "Api",
@@ -139,6 +121,7 @@
         "MemorySize": 256,
         "Timeout": 30,
         "Role": { "Fn::GetAtt": ["SpiderMapsDynamoAccessRole", "Arn"] },
+        "Environment" : { "Variables": {"Stage": {"Ref": "SpiderMapsStage"}}},
         "Events": {
           "RootDelete": {
             "Type": "Api",
@@ -160,6 +143,12 @@
         "MemorySize": 256,
         "Timeout": 30,
         "Role": { "Fn::GetAtt": ["SpiderMapsDynamoAccessRole", "Arn"] },
+        "Environment" : { 
+          "Variables": {
+             "Stage": {"Ref": "SpiderMapsStage"}, 
+             "SQSURL": {"Fn::ImportValue": {"Fn::Join": [":", [{"Ref": "SpiderMapsSQS"},"QueueURL"]]}}
+          }
+        },
         "Events": {
           "RootPost": {
             "Type": "Api",
@@ -177,7 +166,10 @@
     "ApiURL": {
       "Description": "API endpoint URL for Prod environment",
       "Value": {
-        "Fn::Sub": "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
+        "Fn::Sub": "https://${SpiderRecordsAPI}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
+      },
+      "Export": {
+        "Name": {"Fn::Join": [":", [{"Ref": "AWS::StackName"}, "SpiderRecordsApiURL"]]}
       }
     }
   }

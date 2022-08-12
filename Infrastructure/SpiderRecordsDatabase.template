@@ -47,10 +47,49 @@
     "DatabaseURLParameter": {
       "Type": "AWS::SSM::Parameter",
       "Properties": {
-        "Name": {"Fn::Join": ["", ["/staged/",{"Ref": "SpiderMapsStage"},"/spiderrecordsdbname"]]},
+        "Name": {"Fn::Join": ["", ["/staged/",{"Ref": "SpiderMapsStage"},"/spiderrecordsdbarn"]]},
         "Type": "String",
         "Value": {"Fn::GetAtt": ["SpiderMapsDynamo", "Arn"]}
         }
+    },
+    "DatabaseNameParameter": {
+      "Type": "AWS::SSM::Parameter",
+      "Properties": {
+        "Name": {"Fn::Join": ["", ["/staged/",{"Ref": "SpiderMapsStage"},"/spiderrecordsdbname"]]},
+        "Type": "String",
+        "Value": "SpiderMapsDynamo"
+        }
+    },
+    "SpiderMapsDynamoAccessPolicy": {
+      "Type": "AWS::IAM::ManagedPolicy",
+      "Properties": {
+        "ManagedPolicyName" : {"Fn::Join": [ "_", ["SpiderMapsDynamoAccessPolicy", {"Ref": "SpiderMapsStage"}]]},
+        "PolicyDocument" : {
+          
+                  "Version": "2012-10-17",
+                  "Statement": [
+                                {
+                                    "Effect": "Allow",
+                                    "Action": "*",
+                                    "Resource": {"Fn::GetAtt": ["SpiderMapsDynamo","Arn"]}
+                                },
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
+                                        "logs:CreateLogGroup",
+                                        "logs:CreateLogStream",
+                                        "logs:PutLogEvents",
+                                        "dynamodb:GetRecords",
+                                        "dynamodb:GetShardIterator",
+                                        "dynamodb:DescribeStream",
+                                        "dynamodb:ListStreams"
+                                    ],
+                                    "Resource": "*"
+                                }
+                            ]
+                
+        }
+      }
     }
   },
 
@@ -70,7 +109,6 @@
         }
       }
     },
-
     "DynamoDBArn": {
       "Description": "Arn of the database",
       "Value": {
@@ -83,6 +121,20 @@
             [
               { "Ref": "AWS::StackName" },
               "DynamoDBArn"
+            ]
+          ]
+        }
+      }
+    },
+    "DynamoAccessPolicy": {
+      "Value": {"Ref": "SpiderMapsDynamoAccessPolicy"},
+      "Export": {
+        "Name": {
+          "Fn::Join": [
+            ":",
+            [
+              { "Ref": "AWS::StackName" },
+              "DynamoAccessPolicy"
             ]
           ]
         }
