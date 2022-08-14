@@ -54,6 +54,7 @@
 		    }
 		  },
 		  "Role": {"Fn::GetAtt": ["GridRefsLambdaRole","Arn"]},
+		  "Timeout" : 10,
 		  "Handler": "SpeciesRecordAddGridRefs::SpeciesRecordAddGridRefs.GridRefQueueLambda::FunctionHandler",
 		  "Events" : {
 			"SpiderRecordEvents" : {
