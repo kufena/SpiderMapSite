@@ -2,9 +2,9 @@ aws cloudformation create-stack --template-body file://.\SpiderRecordsDatabase.t
 aws cloudformation create-stack --template-body file://.\SpiderRecordsSQS.template --stack-name SpiderRecordsSQS --capabilities CAPABILITY_NAMED_IAM --region eu-west-2
 
 dotnet lambda package SpeciesRecordLambda.zip
-dotnet lambda deploy-serverless --template ..\Infrastructure\SpiderRecordsAPI.template -sb thegatehousewereham.home --stack-name SpiderRecordsAPI --package SpeciesRecordLambda.zip --template-parameters 'SpiderMapsStage=Dev;SpiderMapsSQS=SpiderRecordsSQS;SpiderMapsDynamo=SpiderRecordsDB' --capabilities CAPABILITY_AUTO_EXPAND --region eu-west-2
+dotnet lambda deploy-serverless --template ..\Infrastructure\SpiderRecordsAPI.template -sb <upload bucket> --stack-name SpiderRecordsAPI --package SpeciesRecordLambda.zip --template-parameters 'SpiderMapsStage=Dev;SpiderMapsSQS=SpiderRecordsSQS;SpiderMapsDynamo=SpiderRecordsDB' --capabilities CAPABILITY_AUTO_EXPAND --region eu-west-2
 
 aws cloudformation create-stack --template-body file://.\RecordGridRefDatabase.template --stack-name SpiderRecordGridRefssDB --parameters ParameterKey=SpiderMapsStage,ParameterValue=Dev --capabilities CAPABILITY_NAMED_IAM --region eu-west-2
 
 dotnet lambda package SpeciesRecordGridRefs.zip
-dotnet lambda deploy-serverless --template ..\Infrastructure\GridRefsQueueLambda.template -sb thegatehousewereham.home --stack-name GridRefsQueueLambda --package SpeciesRecordGridRefs.zip --template-parameters 'SQSQueueStack=SpiderRecordsSQS;DBStack=SpiderRecordGridRefssDB' --capabilities CAPABILITY_AUTO_EXPAND --region eu-west-2
+dotnet lambda deploy-serverless --template ..\Infrastructure\GridRefsQueueLambda.template -sb <upload bucket> --stack-name GridRefsQueueLambda --package SpeciesRecordGridRefs.zip --template-parameters 'SQSQueueStack=SpiderRecordsSQS;DBStack=SpiderRecordGridRefssDB' --capabilities CAPABILITY_AUTO_EXPAND --region eu-west-2

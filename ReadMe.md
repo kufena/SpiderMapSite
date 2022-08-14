@@ -22,3 +22,12 @@ The species record API, with species and date, can then be retrieved without lat
 
 This is a purely manufactured app, for the purposes of giving me some experience, so it might not be the best architecture, but it's ok for now.
 
+## Installing the App, so far.
+
+Note I have put all the templates in an Infrastructure folder.  This is fine, except that some of them need separate packaging commands, using
+
+    dotnet lambda package <packagefile.zip>
+
+in their respective folders, and a --package parameter passed to the create stack command.  I've used a mix of CloudFormation and SAM here.
+
+In the Infrastructure directory, there is a commands.txt file that contains the kind of commands you'll need to use.

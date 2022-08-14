@@ -5,8 +5,6 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinomialListLambda", "BinomialListLambda\BinomialListLambda.csproj", "{77FCAC5B-0AA7-4653-B002-99B05A0AA6DF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpiderListProcessing", "SpiderListProcessing\SpiderListProcessing.csproj", "{3D269428-70D0-4D0B-B967-9007A1CC4468}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelToSpecies", "ExcelToSpecies\ExcelToSpecies.csproj", "{1D1F4004-76E7-4FE3-AD0E-B80B0807DC37}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrieTree", "TrieTree\TrieTree.csproj", "{5EF15F26-17E7-4F7F-8A39-E77248CAEE93}"
@@ -37,14 +35,6 @@ Global
 		{77FCAC5B-0AA7-4653-B002-99B05A0AA6DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{77FCAC5B-0AA7-4653-B002-99B05A0AA6DF}.Release|x86.ActiveCfg = Release|Any CPU
 		{77FCAC5B-0AA7-4653-B002-99B05A0AA6DF}.Release|x86.Build.0 = Release|Any CPU
-		{3D269428-70D0-4D0B-B967-9007A1CC4468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D269428-70D0-4D0B-B967-9007A1CC4468}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D269428-70D0-4D0B-B967-9007A1CC4468}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{3D269428-70D0-4D0B-B967-9007A1CC4468}.Debug|x86.Build.0 = Debug|Any CPU
-		{3D269428-70D0-4D0B-B967-9007A1CC4468}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D269428-70D0-4D0B-B967-9007A1CC4468}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3D269428-70D0-4D0B-B967-9007A1CC4468}.Release|x86.ActiveCfg = Release|Any CPU
-		{3D269428-70D0-4D0B-B967-9007A1CC4468}.Release|x86.Build.0 = Release|Any CPU
 		{1D1F4004-76E7-4FE3-AD0E-B80B0807DC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D1F4004-76E7-4FE3-AD0E-B80B0807DC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D1F4004-76E7-4FE3-AD0E-B80B0807DC37}.Debug|x86.ActiveCfg = Debug|Any CPU
