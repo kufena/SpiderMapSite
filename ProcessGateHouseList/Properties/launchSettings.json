@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ProcessGateHouseList": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\Andrew Douglas\\OneDrive\\Documents\\Spiders\\GateHouseRecords2023.txt\""
+    }
+  }
+}
